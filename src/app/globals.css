@@ -17,13 +17,48 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* color: rgb(var(--foreground-rgb)); */
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+    background-image: url('/images/grid.png');
+    background-repeat: repeat-y;
+    /* Repeat only vertically */
+    background-size: cover;
+    background-attachment: fixed;
+    /* Adjust size as needed */
+    height: 100vh;
+    /* Example height */
+    width: 100%;
+    /* Example width */
+    background-color: black;
+}
+
+.background-grid {
+  background: linear-gradient(to bottom,
+        #000000 0%,
+        #380857 52%,
+        #4D0B78 73%,
+        #6D0EAA 100%), url('/images/grid.png');
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+.heading{
+  @apply md:text-[32px] font-medium
+}
+
+.subtitle {
+  @apply md:text-[20px] font-medium
+}
+
+.text {
+  @apply md:text-[16px] font-medium
 }
 
 @layer utilities {
