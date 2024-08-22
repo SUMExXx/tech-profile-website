@@ -35,6 +35,7 @@ body {
     width: 100%;
     /* Example width */
     background-color: black;
+    background-position: center;
 }
 
 .background-grid {
@@ -49,16 +50,28 @@ body {
   background-blend-mode: overlay;
 }
 
+.background-menu-vector-1 {
+  background: url('/images/menuVector1.png');
+  background-size: cover;
+  background-position: right;
+}
+
+.background-menu-vector-2 {
+  background: url('/images/menuVector2.png');
+  background-size: cover;
+  background-position: left;
+}
+
 .heading{
-  @apply md:text-[32px] font-medium
+  @apply md:text-[32px] text-[20px] font-medium
 }
 
 .subtitle {
-  @apply md:text-[20px] font-medium
+  @apply md:text-[20px] text-[10px] font-medium
 }
 
 .text {
-  @apply md:text-[16px] font-medium
+  @apply md:text-[16px] text-[10px] font-medium
 }
 
 @layer utilities {

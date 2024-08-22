@@ -38,14 +38,24 @@ const config: Config = {
         'infinite-scroll': {
             from: { transform: 'translateX(0)' },
             to: { transform: 'translateX(-100%)' },
-        }
+        },
+        'infinite-scroll-reverse': {
+            from: { transform: 'translateX(0)' },
+            to: { transform: 'translateX(100%)' },
+        },
       },
       animation: {
         flicker: 'flicker 1s infinite',
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        'infinite-scroll-reverse': 'infinite-scroll-reverse 25s linear infinite',
+      },
+      translate: {
+        '5/12': '38%',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 };
 export default config;

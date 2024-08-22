@@ -9,10 +9,14 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Menu from '@mui/icons-material/Menu';
 import Logo from './Logo';
+import HamburgerMenu from './HamburgerMenu';
 
 // import Menu from './Menu';
 
 const Navbar = () => {
+
+
+
   return (
     <nav className='z-50 flex w-full fixed top-0 justify-between md:h-[80px] h-[60px] bg-grey md:px-[80px] p-[10px]' id='navbar_container'>
         
@@ -58,9 +62,10 @@ const Navbar = () => {
                     </Link>
                 </li>
             </ul>
-            <button className='flex justify-center items-center lg:hidden' title='hamburgerMenu'>
-                <Menu className='h-[24px] w-[24px] text-violet'/>
-            </button>
+            <div className='flex justify-center items-center lg:hidden' title='hamburgerMenu'>
+                <HamburgerMenu/>
+            </div>
+            
         </div>
         
     </nav>
