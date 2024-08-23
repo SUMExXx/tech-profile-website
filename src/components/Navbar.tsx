@@ -42,17 +42,17 @@ const Navbar = () => {
         <div className='flex justify-center items-center gap-[20px]'>
             <ul className='items-center md:gap-[20px] gap-[10px] flex'>
                 <li className='flex justify-center items-center transition ease-in-out hover:animate-text hover:text-[#F00000]'>
-                    <Link rel="canonical" className='md:p-[10px] p-[6px] flex justify-center items-center rounded-full bg-violet outline md:outline-4 outline-2 outline-lightViolet md:-outline-offset-4 -outline-offset-2' href={socials.linkedin}>
+                    <Link rel="canonical" target='_blank' className='md:p-[10px] p-[6px] flex justify-center items-center rounded-full bg-violet outline md:outline-4 outline-2 outline-lightViolet md:-outline-offset-4 -outline-offset-2' href={socials.linkedin}>
                         <LinkedInIcon className='md:h-[24px] md:w-[24px] h-[16px] w-[16px]' sx={{color: 'white'}}/>
                     </Link>
                 </li>
                 <li className='flex justify-center items-center transition ease-in-out hover:animate-text hover:text-[#F00000]'>
-                    <Link rel="canonical" className='md:p-[10px] p-[6px] flex justify-center items-center rounded-full bg-violet outline md:outline-4 outline-2 outline-lightViolet md:-outline-offset-4 -outline-offset-2' href={socials.instagram}>
+                    <Link rel="canonical" target='_blank' className='md:p-[10px] p-[6px] flex justify-center items-center rounded-full bg-violet outline md:outline-4 outline-2 outline-lightViolet md:-outline-offset-4 -outline-offset-2' href={socials.instagram}>
                         <InstagramIcon className='md:h-[24px] md:w-[24px] h-[16px] w-[16px]' sx={{color: 'white'}}/>
                     </Link>
                 </li>
                 <li className='flex justify-center items-center transition ease-in-out hover:animate-text hover:text-[#F00000]'>
-                    <Link rel="canonical" className='md:p-[10px] p-[6px] flex justify-center items-center rounded-full bg-violet outline md:outline-4 outline-2 outline-lightViolet md:-outline-offset-4 -outline-offset-2' href={socials.github}>
+                    <Link rel="canonical" target='_blank' className='md:p-[10px] p-[6px] flex justify-center items-center rounded-full bg-violet outline md:outline-4 outline-2 outline-lightViolet md:-outline-offset-4 -outline-offset-2' href={socials.github}>
                         <GitHubIcon className='md:h-[24px] md:w-[24px] h-[16px] w-[16px]' sx={{color: 'white'}}/>
                     </Link>
                 </li>

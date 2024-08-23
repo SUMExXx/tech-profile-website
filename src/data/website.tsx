@@ -43,7 +43,9 @@ interface WebContent{
     skill5: string,
     skill6: string,
     bio: string,
-    download: string
+    download: string,
+    featured: string,
+    education: string,
 }
 
 export const contents: WebContent= {
@@ -57,11 +59,41 @@ export const contents: WebContent= {
     skill5: "Media Editor",
     skill6: "Programmer",
     bio: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset.",
-    download: "Download Resume"
+    download: "Download Resume",
+    featured: "Featured Works",
+    education: "Education"
 }
 
 export const skills: string[]= [
     "Next.JS", "React.JS", "Flutter", "Android", "Express.JS", "MongoDB", "Figma", "Firebase", "Docker", "TypeScript", "Node.JS", "TailwindCSS", "C/C++", "Python", "Java", "JavaScript", "ES6+", "Dart", "HTML", "CSS", "XML", "Bootstrap", "Git", "GitHub", "SQL", "Linux", "Scripting"
+]
+
+interface FeaturedItems {
+    image: string,
+    text: string
+}
+
+export const featuredImages: FeaturedItems[]= [
+    {
+        image: "/images/carousel1.png",
+        text: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset."
+    },
+    {
+        image: "/images/carousel2.png",
+        text: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset."
+    },
+    {
+        image: "/images/carousel1.png",
+        text: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset."
+    },
+    {
+        image: "/images/carousel1.png",
+        text: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset."
+    },
+    {
+        image: "/images/carousel1.png",
+        text: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset."
+    },
 ]
 
 interface FooterLink{
@@ -190,8 +222,8 @@ interface Socials{
 }
 
 export const socials: Socials = {
-    linkedin: '',
-    instagram: '',
-    github: '',
-    blogs: ''
+    linkedin: 'https://www.linkedin.com/in/suman-debnath6/',
+    instagram: 'https://www.instagram.com/sumex.in/',
+    github: 'https://github.com/SUMExXx',
+    blogs: '/blogs'
 }
