@@ -17,6 +17,12 @@ export default function Home() {
         </div>
       </div>
       <EducationHomePage/>
+      <div className="w-full relative flex flex-col justify-start items-center">
+        <div className="w-full md:h-[12px] h-[6px] bg-white"/>
+        <div className="md:absolute static md:top-[6px] translate-y-[-1px] md:left-[40px] flex justify-center items-center md:h-[53px] h-[37px] w-[312px] md:w-[457px] heading text-violet bg-black" style={{background: "url('/images/whiteSkillVector.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}>
+          {contents.skill1Detail}
+        </div>
+      </div>
     </main>
   );
 }

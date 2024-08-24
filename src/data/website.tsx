@@ -16,8 +16,8 @@ interface WebData{
 }
 
 export const webData: WebData = {
-    title: 'FoodHub',
-    description: 'Your Culinary Adventure Awaits!'
+    title: 'Suman Debnath',
+    description: 'I am Suman Debnath, a Computer Science Engineering UnderGrad at SGSITS, Indore. I am a Web Developer, Flutter Developer, UI/UX Designer and Graphic Designer.'
 }
 
 interface NavbarLink{
@@ -58,6 +58,8 @@ interface WebContent{
     download: string,
     featured: string,
     education: string,
+    skills: string,
+    skill1Detail: string
 }
 
 export const contents: WebContent= {
@@ -73,7 +75,9 @@ export const contents: WebContent= {
     bio: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset.",
     download: "Download Resume",
     featured: "Featured Works",
-    education: "Education"
+    education: "Education",
+    skills: "Skills",
+    skill1Detail: "WEB DEVELOPMENT"
 }
 
 export const skills: string[]= [
@@ -82,31 +86,41 @@ export const skills: string[]= [
 
 interface FeaturedItems {
     image: string,
+    link: string,
     text: string
 }
 
 export const featuredImages: FeaturedItems[]= [
     {
         image: "/images/carousel1.png",
-        text: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset."
+        link: '/',
+        text: "A hobby ecommerce website for ordering food using MERN stack, integrated with Razorpay payment Gateway."
     },
     {
         image: "/images/carousel2.png",
-        text: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset."
+        link: '/',
+        text: "A display website for a club showcasing the features, events, information and team"
     },
     {
-        image: "/images/carousel1.png",
-        text: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset."
+        image: "/images/carousel3.png",
+        link: '/',
+        text: "A web platform that provides a playground for C++ and Java Code compilation and a problem solving section that provides questions and matches the code with test cases, all without Internet in a LAN server."
     },
     {
-        image: "/images/carousel1.png",
-        text: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset."
-    },
-    {
-        image: "/images/carousel1.png",
-        text: "Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset."
+        image: "/images/carousel4.png",
+        link: '/',
+        text: "A flutter app that enables the customers to view and book services from nearby freelancing service providers and also place bids for works for the service providers to accept. It will include a robust service provider selection options, work tracking and payments."
     },
 ]
+
+export const education = {
+    first: {
+        title: 'B. Tech. CSE, SGSITS',
+        text: 'Currently pursuing Bachelor of Technology in Computer Science Engineering from Shri G. S. Institute of Technology and Science, Indore. I am also associated with Club GS Production House as Advisory Board Member, Computer Club as Graphic Designer and held Head of Web Development at E-Cell, SGSITS.',
+        image: '/images/sgsits.png',
+        year: '2021'
+    }
+}
 
 interface FooterLink{
     text: string,
@@ -168,61 +182,6 @@ export const footerLinks = [
                 url: ''
             },
         ]
-    }
-]
-
-
-interface Category{
-    name: string,
-    icon: string,
-    redirect: string
-}
-
-export const categories: Category[]= [
-    {
-        name: 'Italian',
-        icon: '/icons/italian.png',
-        redirect: '/menu?type=italian',
-    },
-    {
-        name: 'Indian',
-        icon: '/icons/indian.png',
-        redirect: '/menu?type=indian',
-    },
-    {
-        name: 'Chinese',
-        icon: '/icons/chinese.png',
-        redirect: '/menu?type=chinese',
-    },
-    {
-        name: 'Japanese',
-        icon: '/icons/japanese.png',
-        redirect: '/menu?type=japanese',
-    },
-    {
-        name: 'Mexican',
-        icon: '/icons/japanese.png',
-        redirect: '/menu?type=mexican',
-    },
-    {
-        name: 'Breakfast',
-        icon: '/icons/japanese.png',
-        redirect: '/menu?type=breakfast',
-    },
-    {
-        name: 'Starters',
-        icon: '/icons/japanese.png',
-        redirect: '/menu?type=starters',
-    },
-    {
-        name: 'Desserts',
-        icon: '/icons/japanese.png',
-        redirect: '/menu?type=desserts',
-    },
-    {
-        name: 'Drinks',
-        icon: '/icons/japanese.png',
-        redirect: '/menu?type=drinks',
     }
 ]
 

@@ -2,6 +2,7 @@
 import { featuredImages } from '@/data/website';
 import React, { useState } from 'react';
 import Image from "next/image";
+import Link from 'next/link';
 
 const CarouselFeatures = () => {
 
@@ -30,7 +31,7 @@ const CarouselFeatures = () => {
                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                 >
                     {items.map((item, index) => (
-                        <Image key={index} src={item.image} alt={'carousel1'} height={564} width={956}/>
+                        <Link key={index} href={item.link} className='min-w-[956px]'><Image  src={item.image} alt={'carousel1'} height={564} width={956}/></Link>
                     ))}
                 </div>
                 <div
@@ -38,7 +39,7 @@ const CarouselFeatures = () => {
                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                 >
                     {items.map((item, index) => (
-                        <span key={index} className='text text-lightViolet w-[956px] min-w-[956px]'>{item.text}</span>
+                        <Link key={index} href={item.link} className='min-w-[956px] flex justify-center items-start'><span className='text text-lightViolet'>{item.text}</span></Link>
                     ))}
                 </div>
             </div>
