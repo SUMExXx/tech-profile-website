@@ -12,7 +12,7 @@ export default function Home() {
       <SkillsScrollHomePage/>
       <FeaturedHomePage/>
       <div className="w-full relative flex justify-center items-end">
-        <div className="md:absolute static md:bottom-[-2px] translate-y-[2px] md:left-0 flex justify-center items-center md:h-[89px] h-[36px] w-[200px] md:w-[490px] heading text-white" style={{background: "url('/images/titleVector.png')", backgroundSize: "contain"}}>
+        <div className="md:absolute static md:bottom-[-1px] translate-y-[1px] md:left-0 flex justify-center items-center md:h-[89px] h-[36px] w-[200px] md:w-[490px] heading text-white" style={{background: "url('/images/titleVector.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}>
           {contents.education}
         </div>
       </div>
