@@ -1,24 +1,25 @@
+import { website } from "@/data/website";
 import { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
     return[
         {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
+            url: `${process.env.NEXT_PUBLIC_BASE_URL || website.w3url}`,
             lastModified: new Date(),
             priority: 1,
         },
         {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/projects`,
+            url: `${process.env.NEXT_PUBLIC_BASE_URL || website.w3url}/projects`,
             lastModified: new Date(),
             priority: 0.80,
         },
         {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/experience`,
+            url: `${process.env.NEXT_PUBLIC_BASE_URL || website.w3url}/experience`,
             lastModified: new Date(),
             priority: 0.80,
         },
         {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/blogs`,
+            url: `${process.env.NEXT_PUBLIC_BASE_URL || website.w3url}/blogs`,
             lastModified: new Date(),
             priority: 0.80,
         },

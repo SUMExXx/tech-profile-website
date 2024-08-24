@@ -1,3 +1,15 @@
+interface WebSite{
+    w3url: string,
+    url: string
+    blogUrl: string
+}
+
+export const website: WebSite = {
+    w3url: 'https://www.sumandebnath.online',
+    url: 'https://sumandebnath.online',
+    blogUrl: 'https://blog.sumandebnath.online'
+}
+
 interface WebData{
     title: string,
     description: string

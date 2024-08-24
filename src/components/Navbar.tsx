@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { navbarLinks, contents, socials } from '@/data/website';
+import { navbarLinks, contents, socials, website } from '@/data/website';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -57,7 +57,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='flex justify-center items-center transition ease-in-out hover:animate-text hover:text-[#F00000]'>
-                    <Link rel="canonical" className='md:p-[10px] p-[6px] flex justify-center items-center  bg-violet outline md:outline-4 outline-2 outline-lightViolet md:-outline-offset-4 -outline-offset-2' href={process.env.NEXT_PUBLIC_BLOG_URL || 'https://blog.sumandebnath.online'}>
+                    <Link rel="canonical" className='md:p-[10px] p-[6px] flex justify-center items-center  bg-violet outline md:outline-4 outline-2 outline-lightViolet md:-outline-offset-4 -outline-offset-2' href={process.env.NEXT_PUBLIC_BLOG_URL || website.w3url}>
                         <span className='md:text-[16px] text-[12px] font-medium text-white'>{contents.blogs}</span>
                     </Link>
                 </li>
