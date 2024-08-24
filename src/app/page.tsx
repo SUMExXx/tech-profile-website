@@ -3,6 +3,7 @@ import Image from "next/image";
 import HeroSectionHomePage from "./sections/HeroSectionHomePage";
 import SkillsScrollHomePage from "./sections/SkillsScrollHomePage";
 import FeaturedHomePage from "./sections/FeaturedHomePage";
+import EducationHomePage from "./sections/EducationHomePage";
 
 export default function Home() {
   return (
@@ -11,10 +12,11 @@ export default function Home() {
       <SkillsScrollHomePage/>
       <FeaturedHomePage/>
       <div className="w-full relative flex justify-center items-end">
-        <div className="md:absolute static md:bottom-0 md:left-0 flex justify-center items-center md:h-[89px] h-[36px] w-[200px] md:w-[490px] heading text-white" style={{background: "url('/images/titleVector.png')", backgroundSize: "contain"}}>
+        <div className="md:absolute static md:bottom-[-2px] translate-y-[2px] md:left-0 flex justify-center items-center md:h-[89px] h-[36px] w-[200px] md:w-[490px] heading text-white" style={{background: "url('/images/titleVector.png')", backgroundSize: "contain"}}>
           {contents.education}
         </div>
       </div>
+      <EducationHomePage/>
     </main>
   );
 }
