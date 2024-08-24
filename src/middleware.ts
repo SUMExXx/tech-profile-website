@@ -17,5 +17,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/*'], // Apply middleware to all routes
+  matcher: ['/'], // Apply middleware to all routes
 };
