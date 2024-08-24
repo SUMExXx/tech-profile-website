@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+        <meta name="google-site-verification" content="u_ExZBcFIU6jz7OJ4L7bORzuQbPqF3MRksHVsMlWQv4" />
       </Head>
       <body className={`${jetBrainMono.className} antialiased`}>
         {/* <StateProvider>
