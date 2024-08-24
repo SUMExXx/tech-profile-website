@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className='z-50 flex w-full fixed top-0 justify-between md:h-[80px] h-[60px] bg-grey md:px-[80px] p-[10px]' id='navbar_container'>
         
-        <Link rel="canonical" href={'/'} className='flex items-center gap-2 md:gap-4'>
+        <Link rel="canonical" href={process.env.NEXT_PUBLIC_BASE_URL || '/'} className='flex items-center gap-2 md:gap-4'>
             <div className='flex items-center md:gap-[10px]'>
                 {/* <Image src={'/images/sd.png'} width={54.55} height={30} alt={'GSPH logo'} className='md:w-[54.55px] md:h-[30px] w-[36.36px] h-[20px]'></Image> */}
                 <Logo className='md:w-[54.55px] md:h-[30px] w-[36.36px] h-[20px]' fontSize='inherit' height={54.55} width={30}/>
@@ -57,7 +57,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='flex justify-center items-center transition ease-in-out hover:animate-text hover:text-[#F00000]'>
-                    <Link rel="canonical" className='md:p-[10px] p-[6px] flex justify-center items-center  bg-violet outline md:outline-4 outline-2 outline-lightViolet md:-outline-offset-4 -outline-offset-2' href={socials.blogs}>
+                    <Link rel="canonical" className='md:p-[10px] p-[6px] flex justify-center items-center  bg-violet outline md:outline-4 outline-2 outline-lightViolet md:-outline-offset-4 -outline-offset-2' href={process.env.NEXT_PUBLIC_BLOG_URL || 'https://blog.sumandebnath.online'}>
                         <span className='md:text-[16px] text-[12px] font-medium text-white'>{contents.blogs}</span>
                     </Link>
                 </li>

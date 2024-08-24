@@ -3,6 +3,7 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 const jetBrainMono = JetBrains_Mono({ subsets: ["latin"] });
 
@@ -23,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+      </Head>
       <body className={`${jetBrainMono.className} antialiased`}>
         {/* <StateProvider>
           <AuthContextProvider> */}
