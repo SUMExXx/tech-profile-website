@@ -5,9 +5,9 @@ export function middleware(request: NextRequest) {
   const host = request.headers.get('host');
   const subdomain = host?.split('.')[0] || '';
 
-  // Example handling for subdomain "blog"
   if (subdomain === 'blog') {
     const url = request.nextUrl.clone();
+    console.log(url.pathname)
     url.pathname = `/blog${url.pathname}`;
     return NextResponse.rewrite(url); // Rewrite the URL to the correct route
   }
