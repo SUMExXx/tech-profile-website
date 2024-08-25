@@ -5,8 +5,13 @@ export function middleware(request: NextRequest) {
   const host = request.headers.get('host');
   const subdomain = host?.split('.')[0] || '';
 
+  const url = request.nextUrl.clone();
+
+  if (url.pathname.startsWith('/_next/') || url.pathname.startsWith('/static/') || url.pathname.startsWith('/images/')) {
+    return NextResponse.next();
+  }
+
   if (subdomain === 'blog') {
-    const url = request.nextUrl.clone();
     console.log(url.pathname)
     url.pathname = `/blog${url.pathname}`;
     return NextResponse.rewrite(url); // Rewrite the URL to the correct route
@@ -17,5 +22,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/'], // Apply middleware to all routes
+  matcher: ['/:path*'], // Apply middleware to all routes
 };
