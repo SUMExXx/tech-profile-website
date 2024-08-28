@@ -1,23 +1,27 @@
 interface WebSite{
     w3url: string,
     url: string
-    blogUrl: string
+    blogUrl: string,
+    baseUrl: string,
 }
 
 export const website: WebSite = {
     w3url: 'https://www.sumandebnath.online',
     url: 'https://sumandebnath.online',
-    blogUrl: 'https://blog.sumandebnath.online'
+    blogUrl: 'https://blog.sumandebnath.online',
+    baseUrl: 'https://www.sumandebnath.online'
 }
 
 interface WebData{
     title: string,
-    description: string
+    description: string,
+    keywords: string
 }
 
 export const webData: WebData = {
     title: 'Suman Debnath',
-    description: 'I am Suman Debnath, a Computer Science Engineering UnderGrad at SGSITS, Indore. I am a Web Developer, Flutter Developer, UI/UX Designer and Graphic Designer.'
+    description: 'I am Suman Debnath, a Computer Science Engineering UnderGrad at SGSITS, Indore. I am a Web Developer, Flutter Developer, UI/UX Designer and Graphic Designer.',
+    keywords: 'Suman, Debnath, Suman Debnath, Web, Web Developer, Flutter, Flutter Developer, profile, blog, NextJS, SGSITS, Computer, Science, Engineering, Engineer, Software, Developer'
 }
 
 interface NavbarLink{
@@ -59,7 +63,9 @@ interface WebContent{
     featured: string,
     education: string,
     skills: string,
-    skill1Detail: string
+    skill1Detail: string,
+    profileWebsite: string,
+    more: string
 }
 
 export const contents: WebContent= {
@@ -77,7 +83,9 @@ export const contents: WebContent= {
     featured: "Featured Works",
     education: "Education",
     skills: "Skills",
-    skill1Detail: "WEB DEVELOPMENT"
+    skill1Detail: "WEB DEVELOPMENT",
+    profileWebsite: "Profile Website",
+    more: "Recent from Suman Debnath"
 }
 
 export const skills: string[]= [
@@ -196,5 +204,5 @@ export const socials: Socials = {
     linkedin: 'https://www.linkedin.com/in/suman-debnath6/',
     instagram: 'https://www.instagram.com/sumex.in/',
     github: 'https://github.com/SUMExXx',
-    blogs: '/blogs'
+    blogs: '/blogs',
 }

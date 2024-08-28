@@ -11,6 +11,7 @@ const jetBrainMono = JetBrains_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: webData.title,
   description: webData.description,
+  keywords: webData.keywords,
 };
 
 export const viewport: Viewport = {

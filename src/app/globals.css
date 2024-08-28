@@ -58,6 +58,15 @@ body {
     background-position: center;
 }
 
+.grid-back{
+  background-image: url('/images/grid.png');
+  background-repeat: repeat-y;
+  /* Repeat only vertically */
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+}
+
 .background-grid {
   background: linear-gradient(to bottom,
         #000000 0%,
@@ -92,6 +101,10 @@ body {
 
 .text {
   @apply md:text-[16px] text-[10px] font-medium
+}
+
+.text-sm {
+  @apply md:text-[12px] text-[10px] font-medium
 }
 
 @layer utilities {

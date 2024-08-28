@@ -12,7 +12,6 @@ export function middleware(request: NextRequest) {
   }
 
   if (subdomain === 'blog') {
-    console.log(url.pathname)
     url.pathname = `/blog${url.pathname}`;
     return NextResponse.rewrite(url); // Rewrite the URL to the correct route
   }
