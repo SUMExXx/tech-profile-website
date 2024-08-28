@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 import NavbarBlog from "@/app/(blog-group)/blog/components/NavbarBlog";
+import Script from "next/script";
 
 const jetBrainMono = JetBrains_Mono({ subsets: ["latin"] });
 
@@ -25,11 +26,11 @@ export default function BlogLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <link rel="icon" href="/icons/favicon.ico" sizes="any" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2246017499375159" crossOrigin="anonymous"></script>
         <meta name="google-adsense-account" content="ca-pub-2246017499375159"></meta>
-      </Head>
+      </head>
       <body className={`${jetBrainMono.className} antialiased`}>
         {/* <StateProvider>
           <AuthContextProvider> */}
