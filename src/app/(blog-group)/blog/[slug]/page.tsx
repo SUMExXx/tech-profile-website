@@ -26,7 +26,7 @@ export default function Blog({params}: PageProps) {
     </div>
   } else{
     return (
-      <div className="flex relative justify-center items-start text-white p-[20px] md:gap-[20px]">
+      <div className="flex md:flex-row flex-col-reverse relative md:justify-center justify-end md:items-start items-center text-white p-[20px] md:gap-[20px] gap-[20px]" style={{minHeight: "calc(100vh - 80px)"}}>
         <ProgressBar/>
         <MoreBlogs/>
         <div className="max-w-[800px] w-full flex justify-center items-start p-[40px] bg-grey rounded-2xl">

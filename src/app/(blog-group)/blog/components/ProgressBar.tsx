@@ -8,7 +8,7 @@ import { useEffect } from "react"
 
 const ProgressBar = () => {
 
-    const [width, setWidth] = useState<number>(0.01);
+    const [width, setWidth] = useState<number>(0.001);
 
     useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +33,7 @@ const ProgressBar = () => {
 
     return (
         
-        <div className="w-full h-[30px] fixed top-[80px] flex justify-start items-start grid-back">
+        <div className="w-full h-[30px] fixed md:top-[80px] top-[60px] left-0 flex justify-start items-start grid-back">
           <div id="progress" className={`bg-violet h-[6px] z-50`} style={{width: `${width}%`}}></div>
         </div>
     );

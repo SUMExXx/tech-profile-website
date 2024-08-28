@@ -36,9 +36,9 @@ const NavbarBlog = () => {
                     </Link>
                 </li>
             </ul>
-            <div className='flex justify-center items-center lg:hidden' title='hamburgerMenu'>
+            {/* <div className='flex justify-center items-center lg:hidden' title='hamburgerMenu'>
                 <HamburgerMenu/>
-            </div>
+            </div> */}
             
         </div>
         
