@@ -28,6 +28,7 @@ export default function BlogLayout({
       <Head>
         <link rel="icon" href="/icons/favicon.ico" sizes="any" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2246017499375159" crossOrigin="anonymous"></script>
+        <meta name="google-adsense-account" content="ca-pub-2246017499375159"></meta>
       </Head>
       <body className={`${jetBrainMono.className} antialiased`}>
         {/* <StateProvider>
