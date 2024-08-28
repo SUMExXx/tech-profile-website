@@ -3,7 +3,6 @@ import { JetBrains_Mono } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Head from "next/head";
 import { webData } from "@/data/website";
 
 const jetBrainMono = JetBrains_Mono({ subsets: ["latin"] });
@@ -12,6 +11,10 @@ export const metadata: Metadata = {
   title: webData.title,
   description: webData.description,
   keywords: webData.keywords,
+  other: {
+    "google-adsense-account": "ca-pub-2246017499375159",
+    "google-site-verification": "u_ExZBcFIU6jz7OJ4L7bORzuQbPqF3MRksHVsMlWQv4"
+  }
 };
 
 export const viewport: Viewport = {
@@ -26,10 +29,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="google-site-verification" content="u_ExZBcFIU6jz7OJ4L7bORzuQbPqF3MRksHVsMlWQv4" />
-        <meta name="google-adsense-account" content="ca-pub-2246017499375159"></meta>
-      </Head>
       <body className={`${jetBrainMono.className} antialiased`}>
         {/* <StateProvider>
           <AuthContextProvider> */}
