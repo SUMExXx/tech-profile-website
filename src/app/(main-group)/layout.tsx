@@ -28,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <meta name="google-site-verification" content="u_ExZBcFIU6jz7OJ4L7bORzuQbPqF3MRksHVsMlWQv4" />
+        <meta name="google-adsense-account" content="ca-pub-2246017499375159"></meta>
       </Head>
       <body className={`${jetBrainMono.className} antialiased`}>
         {/* <StateProvider>
