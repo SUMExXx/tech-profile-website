@@ -18,7 +18,7 @@ const transporter = nodemailer.createTransport({
 export async function POST(request: Request) {
   const body = await request.json();
   const { email, message } = body;
-
+  
   const mailOptions = {
     from: email,
     to: process.env.NEXT_PUBLIC_EMAIL_RECEIVER,
