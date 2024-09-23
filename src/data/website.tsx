@@ -66,6 +66,12 @@ interface WebContent{
     skill1Detail: string,
     profileWebsite: string,
     more: string
+    copyright: string,
+    sendMessage: string,
+    linkedIn: string,
+    github: string,
+    phone: string,
+    email: string
 }
 
 export const contents: WebContent= {
@@ -85,7 +91,13 @@ export const contents: WebContent= {
     skills: "Skills",
     skill1Detail: "WEB DEVELOPMENT",
     profileWebsite: "Profile Website",
-    more: "Recent from Suman Debnath"
+    more: "Recent from Suman Debnath",
+    copyright: "© 2024 All right reserved",
+    sendMessage: "Send Message",
+    linkedIn: "/suman-debnath6",
+    github: "/SUMExXx666",
+    phone: "+91 89748 63731",
+    email: "sumexxx666@gmail.com"
 }
 
 export const skills: string[]= [
@@ -130,74 +142,13 @@ export const education = {
     }
 }
 
-interface FooterLink{
-    text: string,
-    url: string,
-}
-
-export const footerLinks = [
-    {
-        heading: 'Support Team',
-        links: [
-            {
-                text: 'Help Center',
-                url: ''
-            },
-            {
-                text: 'Tweet Us',
-                url: ''
-            },
-            {
-                text: 'Email',
-                url: ''
-            },
-            {
-                text: 'Customer Care',
-                url: ''
-            }
-        ]
-    },
-    {
-        heading: 'Links',
-        links: [
-            {
-                text: 'Menu',
-                url: ''
-            },
-            {
-                text: 'Combos',
-                url: ''
-            },
-            {
-                text: 'Offers',
-                url: ''
-            },
-            {
-                text: 'Our Services',
-                url: ''
-            }
-        ]
-    },
-    {
-        heading: 'Contact us',
-        links: [
-            {
-                text: 'contact@foodhub.com',
-                url: ''
-            },
-            {
-                text: '+91 89748 63731',
-                url: ''
-            },
-        ]
-    }
-]
-
 interface Socials{
     linkedin: string,
     instagram: string,
     github: string,
     blogs: string
+    phone: string,
+    email: string
 }
 
 export const socials: Socials = {
@@ -205,4 +156,6 @@ export const socials: Socials = {
     instagram: 'https://www.instagram.com/sumex.in/',
     github: 'https://github.com/SUMExXx',
     blogs: '/blogs',
+    phone: 'tel:+918974863731',
+    email: 'mailto:sumexxx666@gmail.com'
 }

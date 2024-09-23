@@ -36,7 +36,7 @@ export default function RootLayout({
             <div className='mt-[60px] md:mt-[80px] text-black'>
               {children}
             </div>
-            {/* <Footer/> */}
+            <Footer/>
             {/* <Spinner/> */}
           {/* </AuthContextProvider>
         </StateProvider> */}
