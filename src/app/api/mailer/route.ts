@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
       pass: process.env.NEXT_PUBLIC_EMAIL_PASS, // Your email password or app-specific password
     },
     tls: {
-      rejectUnauthorized: false, // Set to true in production
+      rejectUnauthorized: true, // Set to true in production
     },
 });
 
