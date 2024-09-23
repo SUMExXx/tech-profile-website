@@ -57,7 +57,7 @@ const HamburgerMenu = () => {
                     {
                         navbarLinks.map(item => (
                             <div key={crypto.randomUUID()} className='transition justify-center ease-in-out hover:animate-text hover:text-[#F00000]'>
-                                <Link rel="canonical" className='md:text-[16px] font-medium text-neonGreen' href={item.link}>{item.text}</Link>
+                                <Link onClick={close} rel="canonical" className='md:text-[16px] font-medium text-neonGreen' href={item.link}>{item.text}</Link>
                             </div>
                         ))
                     }

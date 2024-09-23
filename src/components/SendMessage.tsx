@@ -3,6 +3,24 @@ import { contents } from '@/data/website';
 import { useState } from 'react';
 
 const SendMessage = () => {
+
+  const [emailStatus, setEmailStatus] = useState<boolean>(true);
+  const [messageStatus, setMessageStatus] = useState<boolean>(true);
+
+  const handleEmailFocus = () => {
+    if(emailStatus){
+      setEmailValue("");
+      setEmailStatus(false);
+    }
+  }
+
+  const handleMessageFocus = () => {
+    if(messageStatus){
+      setMessageValue("");
+      setMessageStatus(false);
+    }
+  }
+
   const [emailValue, setEmailValue] = useState<string>('Enter your Email');
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -58,31 +76,33 @@ const SendMessage = () => {
   }
 
   return (
-    <div className='flex flex-col h-full justify-between items-end md:gap-[20px]'>
-        <div className='md:h-[298px] md:w-[413px] flex flex-col md:p-[20px] md:gap-[20px]' style={{backgroundImage: "url('/images/footerMessageElement.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}>
+    <div className='flex flex-col h-full justify-between items-end gap-[20px]'>
+        <div className='md:h-[298px] h-[230px] md:w-[413px] w-[320px] flex flex-col md:p-[20px] p-[20px] md:gap-[20px] gap-[20px]' style={{backgroundImage: "url('/images/footerMessageElement.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}>
             <div className='w-full'>
-                {/* <label htmlFor="shortText">Short Text:</label> */}
+                <label htmlFor="email" className='hidden'>Email:</label>
                 <input
                     id="email"
                     type="text"
                     value={emailValue}
+                    onFocus={handleEmailFocus}
                     onChange={handleEmailChange}
                     className="border p-2 w-full text-grey text-bold"
                     maxLength={50} // limit the length of the input
                 />
             </div>
             <div className='w-full h-full'>
-                {/* <label htmlFor="shortText">Short Text:</label> */}
+                <label htmlFor="message" className='hidden'>Message</label>
                 <textarea
                     id="message"
                     value={messageValue}
                     onChange={handleMessageChange}
-                    className="border p-2 w-full text-grey text-bold md:max-h-[196px] md:min-h-[196px] max-w-full"
+                    onFocus={handleMessageFocus}
+                    className="border p-2 w-full text-grey text-bold md:max-h-[196px] max-h-[129px] md:min-h-[196px] min-h-[129px] max-w-full"
                     maxLength={50} // limit the length of the input
                 />
             </div>
         </div>
-        <button onClick={sendMessage} className="md:subtitle text-white md:flex hidden justify-center items-center text-center right-[360px] top-[-16px] md:w-[273.41px] md:h-[52.41px] transition-all duration-300 ease-in-out hover:filter hover:brightness-125" style={{backgroundImage: "url('/images/leftSkillVector.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}>
+        <button onClick={sendMessage} className="subtitle text-white flex justify-center items-center text-center right-[360px] top-[-16px] md:w-[273.41px] md:h-[52.41px] w-[127px] h-[25px] transition-all duration-300 ease-in-out hover:filter hover:brightness-125" style={{backgroundImage: "url('/images/leftSkillVector.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}>
             
               {messageLoadingState === false ? contents.sendMessage : 
               <div role="status">
