@@ -159,3 +159,111 @@ export const socials: Socials = {
     phone: 'tel:+918974863731',
     email: 'mailto:sumexxx666@gmail.com'
 }
+
+interface WebTechIcon{
+    url: string,
+    alt: string,
+    height: number,
+    width: number
+}
+
+export const webTechIcons: WebTechIcon[]= [
+    {
+        url: "/icons/nextjs-monochrome.png",
+        alt: 'NextJS',
+        height: 40,
+        width: 40,
+    },
+    {
+        url: "/icons/reactjs-monochrome.png",
+        alt: 'ReactJS',
+        height: 40,
+        width: 40,
+    },
+    {
+        url: "/icons/tailwindcss-monochrome.png",
+        alt: 'TailwindCSS',
+        height: 40,
+        width: 40,
+    },
+    {
+        url: "/icons/nodejs-monochrome.png",
+        alt: 'NodeJS',
+        height: 40,
+        width: 62.44,
+    },
+    {
+        url: "/icons/typescript-monochrome.png",
+        alt: 'TypeScript',
+        height: 40,
+        width: 40,
+    },
+    {
+        url: "/icons/expressjs-monochrome.png",
+        alt: 'ExpressJS',
+        height: 40,
+        width: 40,
+    },
+    {
+        url: "/icons/mongodb-monochrome.png",
+        alt: 'MongoDB',
+        height: 40,
+        width: 145.1,
+    },
+    {
+        url: "/icons/postgresql-monochrome.png",
+        alt: 'PostgreSQL',
+        height: 40,
+        width: 38.53,
+    },
+    {
+        url: "/icons/cloudinary-monochrome.png",
+        alt: 'Cloudinary',
+        height: 40,
+        width: 55.83,
+    },
+    {
+        url: "/icons/firebase-monochrome.png",
+        alt: 'Firebase',
+        height: 40,
+        width: 32.29,
+    },
+    {
+        url: "/icons/framermotion-monochrome.png",
+        alt: 'FramerMotion',
+        height: 40,
+        width: 40,
+    },
+]
+
+interface ProjectPreview{
+    image: string,
+    url: string,
+    title: string
+}
+
+interface ProjectPreviews{
+    webdev: ProjectPreview[],
+    flutter: ProjectPreview[],
+    uiux: ProjectPreview[],
+    graphics: ProjectPreview[]
+} 
+
+export const projectPreviews: ProjectPreviews = {
+    webdev: [
+        {
+            image: '/images/project-images/foodhub.png',
+            url: '/',
+            title: 'FoodHub: A hobby ecommerce website'
+        }
+    ],
+    flutter: [
+
+    ],
+    uiux: [
+
+    ],
+    graphics: [
+
+    ]
+}
