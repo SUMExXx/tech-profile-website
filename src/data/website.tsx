@@ -6,10 +6,10 @@ interface WebSite{
 }
 
 export const website: WebSite = {
-    w3url: 'https://www.sumandebnath.online',
-    url: 'https://sumandebnath.online',
-    blogUrl: 'https://blog.sumandebnath.online',
-    baseUrl: 'https://www.sumandebnath.online'
+    w3url: 'https://www.sumandebnath.site',
+    url: 'https://www.sumandebnath.site',
+    blogUrl: 'https://blog.sumandebnath.site',
+    baseUrl: 'https://www.sumandebnath.site'
 }
 
 interface WebData{
