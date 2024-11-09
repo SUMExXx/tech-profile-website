@@ -54,8 +54,10 @@ export default function Blog1() {
 
         {/* Quote */}
         <blockquote className="border-l-4 border-blue-400 pl-4 italic text-gray-400 mb-4">
+          {`
           "In every walk with nature one receives far more than he seeks." – John
-          Muir
+          Muir`
+          }
         </blockquote>
 
         <p className="mb-4">
