@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NavbarBlog from "@/app/(blog-group)/blog/components/NavbarBlog";
 import Script from "next/script";
+import FooterBlog from "./components/FooterBlog";
 
 const jetBrainMono = JetBrains_Mono({ subsets: ["latin"] });
 
@@ -36,7 +37,7 @@ export default function BlogLayout({
             <div className='mt-[80px] md:mt-[90px] text-black'>
               {children}
             </div>
-            {/* <Footer/> */}
+            <FooterBlog/>
             {/* <Spinner/> */}
           {/* </AuthContextProvider>
         </StateProvider> */}

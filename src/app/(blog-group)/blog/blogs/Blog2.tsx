@@ -1,7 +1,7 @@
 import { contents, skills } from "@/data/website";
 import Image from "next/image";
 
-export default function Blog1() {
+export default function Blog2() {
 
   return (
     <div className="max-w-3xl mx-auto p-6 rounded-lg my-8 bg-transparent">

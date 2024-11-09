@@ -11,7 +11,7 @@ interface props{
 const Reveal = ({children, width= 'fit-content'} : props) => {
 
     const ref = useRef(null);
-    const isInView = useInView(ref, {once: false})  //set optional parameter {once: true} if you want it to animate only once
+    const isInView = useInView(ref, {once: true})  //set optional parameter {once: true} if you want it to animate only once
 
     const mainControls = useAnimation()
 

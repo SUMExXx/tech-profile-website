@@ -64,6 +64,7 @@ interface WebContent{
     education: string,
     skills: string,
     skill1Detail: string,
+    skill2Detail: string,
     profileWebsite: string,
     more: string
     copyright: string,
@@ -90,6 +91,7 @@ export const contents: WebContent= {
     education: "Education",
     skills: "Skills",
     skill1Detail: "WEB DEVELOPMENT",
+    skill2Detail: "FLUTTER",
     profileWebsite: "Profile Website",
     more: "Recent from Suman Debnath",
     copyright: "© 2024 All right reserved",
@@ -138,7 +140,19 @@ export const education = {
         title: 'B. Tech. CSE, SGSITS',
         text: 'Currently pursuing Bachelor of Technology in Computer Science Engineering from Shri G. S. Institute of Technology and Science, Indore. I am also associated with Club GS Production House as Advisory Board Member, Computer Club as Graphic Designer and held Head of Web Development at E-Cell, SGSITS.',
         image: '/images/sgsits.png',
+        year: '2025'
+    },
+    second: {
+        title: 'HSC Science, SKMS AGT',
+        text: 'Currently pursuing Bachelor of Technology in Computer Science Engineering from Shri G. S. Institute of Technology and Science, Indore. I am also associated with Club GS Production House as Advisory Board Member, Computer Club as Graphic Designer and held Head of Web Development at E-Cell, SGSITS.',
+        image: '/images/skms.png',
         year: '2021'
+    },
+    third: {
+        title: 'SSC, SKMS AGT',
+        text: 'Currently pursuing Bachelor of Technology in Computer Science Engineering from Shri G. S. Institute of Technology and Science, Indore. I am also associated with Club GS Production House as Advisory Board Member, Computer Club as Graphic Designer and held Head of Web Development at E-Cell, SGSITS.',
+        image: '/images/skms.png',
+        year: '2019'
     }
 }
 
@@ -252,7 +266,32 @@ interface ProjectPreviews{
 export const projectPreviews: ProjectPreviews = {
     webdev: [
         {
-            image: '/images/project-images/foodhub.png',
+            image: '/images/foodhub1.png',
+            url: '/',
+            title: 'FoodHub: A hobby ecommerce website'
+        },
+        {
+            image: '/images/foodhub2.png',
+            url: '/',
+            title: 'FoodHub: A hobby ecommerce website'
+        },
+        {
+            image: '/images/gsph1.png',
+            url: '/',
+            title: 'FoodHub: A hobby ecommerce website'
+        },
+        {
+            image: '/images/codemon1.png',
+            url: '/',
+            title: 'FoodHub: A hobby ecommerce website'
+        },
+        {
+            image: '/images/codemon2.png',
+            url: '/',
+            title: 'FoodHub: A hobby ecommerce website'
+        },
+        {
+            image: '/images/sharehub1.png',
             url: '/',
             title: 'FoodHub: A hobby ecommerce website'
         }

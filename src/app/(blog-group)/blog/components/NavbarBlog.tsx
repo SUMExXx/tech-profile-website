@@ -18,7 +18,7 @@ const NavbarBlog = () => {
 
 
   return (
-    <nav className='z-50 flex w-full fixed top-0 justify-between md:h-[80px] h-[60px] bg-grey md:px-[80px] p-[10px]' id='navbar_container'>
+    <nav className='z-50 flex w-full fixed top-0 justify-between md:h-[80px] h-[60px] bg-grey md:px-[80px] p-[10px] shadow-2xl' id='navbar_container'>
         
         <Link rel="canonical" href={process.env.NEXT_PUBLIC_BLOG_URL || '/'} className='flex items-center gap-2 md:gap-4'>
             <div className='flex items-center md:gap-[10px]'>

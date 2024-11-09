@@ -94,18 +94,18 @@ export default function EducationHomePage() {
                 <Reveal>
                     <div ref={elementRef2} id={'elementRef2'} className='flex w-full flex-col justify-center items-start md:gap-[40px]'>
                         <div className='flex relative w-full md:flex-row flex-col justify-center items-center md:gap-[40px]'>
-                            <Image src={'/images/educationVector.png'} alt={'carousel1'} height={473.04} width={629.63}/>
-                            <span className='w-full text text-white'>jddjuvbdjvsdjkvnsdjkvnsdjkvdjkvndjv</span>
-                            <span className='absolute text-white subtitle left-[70px] top-[-6px]'>B. Tech CSE, SGSITS</span>
+                            <Image src={education.second.image} alt={'carousel1'} height={473.04} width={629.63}/>
+                            <span className='w-full text text-white'>{education.second.text}</span>
+                            <span className='absolute text-white subtitle left-[70px] top-[-6px]'>{education.second.title}</span>
                         </div>
                     </div>
                 </Reveal>
                 <Reveal>
                     <div ref={elementRef3} id={'elementRef3'} className='flex w-full flex-col justify-center items-start md:gap-[40px]'>
                         <div className='flex relative w-full md:flex-row flex-col justify-center items-center md:gap-[40px]'>
-                            <Image src={'/images/educationVector.png'} alt={'carousel1'} height={473.04} width={629.63}/>
-                            <span className='w-full text text-white'>jddjuvbdjvsdjkvnsdjkvnsdjkvdjkvndjv</span>
-                            <span className='absolute text-white subtitle left-[70px] top-[-6px]'>B. Tech CSE, SGSITS</span>
+                            <Image src={education.third.image} alt={'carousel1'} height={473.04} width={629.63}/>
+                            <span className='w-full text text-white'>{education.third.text}</span>
+                            <span className='absolute text-white subtitle left-[70px] top-[-6px]'>{education.third.title}</span>
                         </div>
                     </div>
                 </Reveal>
@@ -118,10 +118,10 @@ export default function EducationHomePage() {
                             <span className="heading text-white">{education.first.year}</span>
                         </div>
                         <div className="flex flex-col justify-center items-center overflow-x-visible h-1/3">
-                            <span className="heading text-white">2022</span>
+                            <span className="heading text-white">{education.second.year}</span>
                         </div>
                         <div className="flex flex-col justify-center items-center overflow-x-visible h-1/3">
-                            <span className="heading text-white">2023</span>
+                            <span className="heading text-white">{education.third.year}</span>
                         </div>
                     </div>
                 </div>
@@ -156,32 +156,32 @@ export default function EducationHomePage() {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-between items-center w-full h-[240px] pr-[20px]'>
+                <div className='flex justify-between items-center w-full h-[400px] pr-[20px]'>
                     <Reveal>
                         <div className='flex w-full flex-col justify-center items-start md:gap-[40px] gap-[20px] p-[20px]'>
-                            <Image src={'/images/educationVector.png'} alt={'carousel1'} height={173} width={230}/>
-                            <span className='text text-white'>jddjuvbdjvsdjkvnsdjkvnsdjkvdjkvndjv</span>
+                            <Image src={education.second.image} alt={'carousel1'} height={173} width={230}/>
+                            <span className='text text-white'>{education.second.text}</span>
                         </div>
                     </Reveal>
                     <div className='flex justify-end items-center h-full gap-[20px]'>
                         <Reveal>
-                            <span className="heading text-white">{education.first.year}</span>
+                            <span className="heading text-white">{education.second.year}</span>
                         </Reveal>
                         <div className="w-[20px] flex flex-col justify-center items-start h-full bg-gradient-to-b from-[#1D1D1F] to-[#1D1D1F] bg-center" style={{backgroundSize: "50%", backgroundRepeat: "no-repeat"}}>
                             <div className="h-[20px] w-[20px] bg-neonGreen outline outline-2 -outline-offset-2 outline-lightViolet rounded-full"/>
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-between items-center w-full h-[240px] pr-[20px]'>
+                <div className='flex justify-between items-center w-full h-[300px] pr-[20px]'>
                     <Reveal>
                         <div className='flex w-full flex-col justify-center items-center md:gap-[40px] gap-[20px] p-[20px]'>
-                            <Image src={'/images/educationVector.png'} alt={'carousel1'} height={173} width={230}/>
-                            <span className='text text-white'>jddjuvbdjvsdjkvnsdjkvnsdjkvdjkvndjv</span>
+                            <Image src={education.third.image} alt={'carousel1'} height={173} width={230}/>
+                            <span className='text text-white'>{education.third.text}</span>
                         </div>
                     </Reveal>
                     <div className='flex justify-end items-center h-full gap-[20px]'>
                         <Reveal>
-                            <span className="heading text-white">{education.first.year}</span>
+                            <span className="heading text-white">{education.third.year}</span>
                         </Reveal>
                         <div className="w-[20px] flex flex-col justify-center items-start h-full bg-gradient-to-b from-[#1D1D1F] to-[#400963] bg-center" style={{backgroundSize: "50%", backgroundRepeat: "no-repeat"}}>
                             <div className="h-[20px] w-[20px] bg-neonGreen outline outline-2 -outline-offset-2 outline-lightViolet rounded-full"/>

@@ -23,5 +23,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
             lastModified: new Date(),
             priority: 0.80,
         },
+        {
+            url: `${process.env.NEXT_PUBLIC_BASE_URL || website.w3url}/blogs/switching-to-bigger-ssd-without-losing-data`,
+            lastModified: new Date(),
+            priority: 0.70,
+        },
     ]
 }

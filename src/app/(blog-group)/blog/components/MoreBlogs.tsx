@@ -30,7 +30,7 @@ const MoreBlogs = () => {
                 {
                     blogs.map((blog, index) => 
                         <div key={index} className="w-full">
-                            <Link href={process.env.NEXT_PUBLIC_BLOG_URL||website.blogUrl + blog.url} title={blog.title} className="text-sm text-lightViolet block whitespace-nowrap truncate text-ellipsis text-overflow-ellipsis overflow-hidden w-full" style={{textOverflow: "ellipsis"}}>
+                            <Link href={`/blog${blog.url}`} title={blog.title} className="text-sm text-lightViolet block whitespace-nowrap truncate text-ellipsis text-overflow-ellipsis overflow-hidden w-full" style={{textOverflow: "ellipsis"}}>
                                 {blog.title}
                             </Link>
                             {index < blogs.length - 1 && <hr className="my-2 border-gray-600 w-full" />}
