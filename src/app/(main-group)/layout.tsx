@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: webData.title,
     images: [
       {
-        url: website.url+'/files/opengraph-image.png',
+        url: website.url+'/images/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: 'Image description',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Your Page Title',
-    description: 'A short description of your page',
+    title: webData.title,
+    description: webData.description,
     images: [website.url+'/files/opengraph-image.png'],
   },
 };
