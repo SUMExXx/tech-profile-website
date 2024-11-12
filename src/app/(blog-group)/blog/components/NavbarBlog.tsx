@@ -9,7 +9,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Menu from '@mui/icons-material/Menu';
 import Logo from '../../../../components/Logo';
-import HamburgerMenu from '../../../../components/HamburgerMenu';
+import HamburgerMenu from '../../../(main-group)/components/HamburgerMenu';
+import HamburgerMenuBlog from './HamburgerMenuBlog';
 
 // import Menu from './Menu';
 
@@ -36,9 +37,9 @@ const NavbarBlog = () => {
                     </Link>
                 </li>
             </ul>
-            {/* <div className='flex justify-center items-center lg:hidden' title='hamburgerMenu'>
-                <HamburgerMenu/>
-            </div> */}
+            <div className='flex justify-center items-center md:hidden' title='hamburgerMenuBlog'>
+                <HamburgerMenuBlog/>
+            </div>
             
         </div>
         

@@ -98,7 +98,7 @@ const SendMessage = () => {
                     onChange={handleMessageChange}
                     onFocus={handleMessageFocus}
                     className="border p-2 w-full text-grey text-bold md:max-h-[196px] max-h-[129px] md:min-h-[196px] min-h-[129px] max-w-full"
-                    maxLength={50} // limit the length of the input
+                    maxLength={200} // limit the length of the input
                 />
             </div>
         </div>

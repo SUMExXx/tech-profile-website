@@ -33,7 +33,7 @@ const ProgressBar = () => {
 
     return (
         
-        <div className="w-full h-[6px] fixed md:top-[80px] top-[60px] left-0 flex justify-start items-start grid-back z-50 bg-black">
+        <div className="w-full h-[6px] fixed md:top-[80px] top-[60px] left-0 flex justify-start items-start grid-back z-50 bg-black" id="progress-bar">
           <div id="progress" className={`bg-violet h-[6px] z-50`} style={{width: `${width}%`}}></div>
         </div>
     );

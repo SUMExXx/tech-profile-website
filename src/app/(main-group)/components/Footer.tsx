@@ -10,8 +10,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CallIcon from '@mui/icons-material/Call';
 import MailIcon from '@mui/icons-material/Mail';
-import EmailInput from './SendMessage';
-import SendMessage from './SendMessage';
+import EmailInput from '../../../components/SendMessage';
+import SendMessage from '../../../components/SendMessage';
 
 const Footer = () => {
   return (

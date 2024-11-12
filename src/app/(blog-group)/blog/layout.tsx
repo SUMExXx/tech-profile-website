@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "../../globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/app/(main-group)/components/Navbar";
+import Footer from "@/app/(main-group)/components/Footer";
 import NavbarBlog from "@/app/(blog-group)/blog/components/NavbarBlog";
 import Script from "next/script";
 import FooterBlog from "./components/FooterBlog";
@@ -34,7 +34,7 @@ export default function BlogLayout({
         {/* <StateProvider>
           <AuthContextProvider> */}
             <NavbarBlog/>
-            <div className='mt-[80px] md:mt-[90px] text-black'>
+            <div className='mt-[60px] md:mt-[90px] text-black'>
               {children}
             </div>
             <FooterBlog/>

@@ -8,7 +8,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Menu from '@mui/icons-material/Menu';
-import Logo from './Logo';
+import Logo from '../../../components/Logo';
 import HamburgerMenu from './HamburgerMenu';
 
 // import Menu from './Menu';
@@ -62,7 +62,7 @@ const Navbar = () => {
                     </Link>
                 </li>
             </ul>
-            <div className='flex justify-center items-center lg:hidden' title='hamburgerMenu'>
+            <div className='flex justify-center items-center md:hidden' title='hamburgerMenu'>
                 <HamburgerMenu/>
             </div>
             

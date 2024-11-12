@@ -20,7 +20,7 @@ interface WebData{
 
 export const webData: WebData = {
     title: 'Suman Debnath',
-    description: 'I am Suman Debnath, a Computer Science Engineering UnderGrad at SGSITS, Indore. I am a Web Developer, Flutter Developer, UI/UX Designer and Graphic Designer.',
+    description: 'Suman Debnath, Computer Science Engineering Undergrad at SGSITS, Indore. I am a Web Developer, Flutter Developer, UI/UX Designer and Graphic Designer.',
     keywords: 'Suman, Debnath, Suman Debnath, Web, Web Developer, Flutter, Flutter Developer, profile, blog, NextJS, SGSITS, Computer, Science, Engineering, Engineer, Software, Developer'
 }
 
