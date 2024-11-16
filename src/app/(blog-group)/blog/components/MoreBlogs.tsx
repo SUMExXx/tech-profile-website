@@ -28,7 +28,7 @@ const MoreBlogs = () => {
             <h1 className='md:text-[20px] test-[16px] text-white'>{contents.more}</h1>
             <div className="flex flex-col justify-start items-start overflow-hidden w-full">
                 {
-                    blogs.map((blog, index) => 
+                    blogs.slice(0, 10).map((blog, index) => 
                         <div key={index} className="w-full flex flex-col items-center lg:items-start">
                             <Link href={`/blog${blog.url}`} title={blog.title} className="text-sm text-lightViolet block whitespace-nowrap truncate text-ellipsis text-overflow-ellipsis overflow-hidden w-full text-center lg:text-left" style={{textOverflow: "ellipsis"}}>
                                 {blog.title}

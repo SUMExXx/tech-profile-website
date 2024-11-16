@@ -1,5 +1,6 @@
 import { contents, skills } from "@/data/website";
 import Image from "next/image";
+import Script from 'next/script';
 
 export default function Blog1() {
 
@@ -29,6 +30,19 @@ export default function Blog1() {
           explore some of the most captivating natural wonders that everyone
           should experience at least once in their lifetime.
         </p>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2246017499375159" crossOrigin="anonymous"></script>
+        <ins className="adsbygoogle"
+            style={{ display: 'block', textAlign: 'center' }}
+            data-ad-layout="in-article"
+            data-ad-format="fluid"
+            data-ad-client="ca-pub-2246017499375159"
+            data-ad-slot="9000029878"></ins>
+        <Script id="ad299" strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+          }}>
+        </Script>
 
         {/* Inline Image with Text */}
         <div className="flex items-center gap-4 my-6">
