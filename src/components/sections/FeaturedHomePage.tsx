@@ -1,6 +1,6 @@
 import CarouselFeatures from "@/components/CarouselFeatures";
 import Reveal from "@/components/Reveal";
-import { contents, featuredImages } from "@/data/website";
+import { featuredImages } from "@/lib/data/website";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ export default function FeaturedHomePage() {
 
   return (
     <section className="flex flex-col w-full justify-start items-center md:gap-[40px] gap-[25px] md:pt-[60px] md:pb-[200px] pb-[80px] px-[20px] py-[20px]">
-        <Reveal><span className="heading text-white">{contents.featured}</span></Reveal>
+        <Reveal><span className="heading text-white">Featured Works</span></Reveal>
         <Reveal><CarouselFeatures/></Reveal>
         <div className="md:hidden flex flex-col gap-[40px] px-[20px] pt-[20px] justify-center items-center">
           {items.map((item, index) => (

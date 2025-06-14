@@ -1,8 +1,6 @@
-import { contents, skills } from "@/data/website";
 import Image from "next/image";
-import Script from 'next/script';
 
-export default function Blog1() {
+export default function Blog2() {
 
   return (
     <div className="max-w-3xl mx-auto p-6 rounded-lg my-8 bg-transparent">
@@ -15,10 +13,12 @@ export default function Blog1() {
       </div>
 
       {/* Featured Image */}
-      <img
+      <Image
         src="https://via.placeholder.com/800x400"
         alt="Nature scenery"
         className="w-full h-auto rounded-md mt-6"
+        width={800}
+        height={400}
       />
 
       {/* Blog Content */}
@@ -31,25 +31,14 @@ export default function Blog1() {
           should experience at least once in their lifetime.
         </p>
 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2246017499375159" crossOrigin="anonymous"></script>
-        <ins className="adsbygoogle"
-            style={{ display: 'block', textAlign: 'center' }}
-            data-ad-layout="in-article"
-            data-ad-format="fluid"
-            data-ad-client="ca-pub-2246017499375159"
-            data-ad-slot="9000029878"></ins>
-        <Script id="ad299" strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-          }}>
-        </Script>
-
         {/* Inline Image with Text */}
         <div className="flex items-center gap-4 my-6">
-          <img
+          <Image
             src="https://via.placeholder.com/150x100"
             alt="Forest view"
             className="rounded-md w-48 h-auto"
+            width={150}
+            height={100}
           />
           <p>
             A walk through a dense forest with sunlight streaming through the
@@ -82,10 +71,12 @@ export default function Blog1() {
         </p>
 
         {/* Secondary Image */}
-        <img
+        <Image
           src="https://via.placeholder.com/800x400"
           alt="Underwater view"
           className="w-full h-auto rounded-md my-6"
+          width={800}
+          height={400}
         />
 
         <p className="mb-4">

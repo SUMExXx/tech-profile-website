@@ -1,13 +1,10 @@
 "use client";
-import React, { useState, useEffect, useRef } from 'react';
-import CarouselFeatures from "@/components/CarouselFeatures";
-import { contents, education, featuredImages } from "@/data/website";
+import React, { useEffect, useRef } from 'react';
+import { education } from "@/lib/data/website";
 import Image from "next/image";
 import Reveal from '@/components/Reveal';
 
 export default function EducationHomePage() {
-
-  const items = featuredImages
 
   const elementRef1 = useRef<HTMLDivElement>(null);
   const elementRef2 = useRef<HTMLDivElement>(null);
@@ -79,7 +76,7 @@ export default function EducationHomePage() {
   }, []);
 
   return (
-    <section className='flex flex-col justify-center items-start w-full bg-gradient-to-b from-violet to-[#3C095D] bg-cover'>
+    <section className='flex flex-col justify-center items-start w-full bg-gradient-to-b from-main-primary to-[#3C095D] bg-cover'>
         <div className="flex w-full justify-center items-start md:gap-[40px] gap-[25px] md:pt-[0px] md:pb-[100px] pb-[60px] md:px-[20px] md:py-[20px]">
             <div className="md:flex hidden flex-col md:gap-[120px] justify-start items-start w-[100%] h-full px-[60px] py-[120px]">
                 <Reveal>
@@ -125,16 +122,16 @@ export default function EducationHomePage() {
                         </div>
                     </div>
                 </div>
-                <div className="w-[60px] overflow-y-hidden overflow-x-visible h-full bg-gradient-to-b from-violet via-[#1D1D1F] to-[#400963] bg-center" style={{backgroundSize: "50%", backgroundRepeat: "no-repeat"}}>
+                <div className="w-[60px] overflow-y-hidden overflow-x-visible h-full bg-gradient-to-b from-main-primary via-[#1D1D1F] to-[#400963] bg-center" style={{backgroundSize: "50%", backgroundRepeat: "no-repeat"}}>
                     <div className="flex flex-col justify-start items-center overflow-x-visible h-[300%] transition-transform duration-500" ref={animatedRef2}>
                         <div className="flex flex-col justify-center items-center overflow-x-visible h-1/3">
-                            <div className="h-[40px] w-[40px] bg-neonGreen outline outline-4 -outline-offset-4 outline-lightViolet rounded-full"/>
+                            <div className="h-[40px] w-[40px] bg-main-quaternary outline-4 -outline-offset-4 outline-main-secondary rounded-full"/>
                         </div>
                         <div className="flex flex-col justify-center items-center overflow-x-visible h-1/3">
-                            <div className="h-[40px] w-[40px] bg-neonGreen outline outline-4 -outline-offset-4 outline-lightViolet rounded-full"/>
+                            <div className="h-[40px] w-[40px] bg-main-quaternary outline-4 -outline-offset-4 outline-main-secondary rounded-full"/>
                         </div>
                         <div className="flex flex-col justify-center items-center overflow-x-visible h-1/3">
-                            <div className="h-[40px] w-[40px] bg-neonGreen outline outline-4 -outline-offset-4 outline-lightViolet rounded-full"/>
+                            <div className="h-[40px] w-[40px] bg-main-quaternary outline-4 -outline-offset-4 outline-main-secondary rounded-full"/>
                         </div>
                     </div>
                 </div>
@@ -151,8 +148,8 @@ export default function EducationHomePage() {
                         <Reveal>
                             <span className="heading text-white">{education.first.year}</span>
                         </Reveal>
-                        <div className="w-[20px] flex flex-col justify-center items-start h-full bg-gradient-to-b from-violet to-[#1D1D1F] bg-center" style={{backgroundSize: "50%", backgroundRepeat: "no-repeat"}}>
-                            <div className="h-[20px] w-[20px] bg-neonGreen outline outline-2 -outline-offset-2 outline-lightViolet rounded-full"/>
+                        <div className="w-[20px] flex flex-col justify-center items-start h-full bg-gradient-to-b from-main-primary to-[#1D1D1F] bg-center" style={{backgroundSize: "50%", backgroundRepeat: "no-repeat"}}>
+                            <div className="h-[20px] w-[20px] bg-main-quaternary outline-2 -outline-offset-2 outline-main-secondary rounded-full"/>
                         </div>
                     </div>
                 </div>
@@ -168,7 +165,7 @@ export default function EducationHomePage() {
                             <span className="heading text-white">{education.second.year}</span>
                         </Reveal>
                         <div className="w-[20px] flex flex-col justify-center items-start h-full bg-gradient-to-b from-[#1D1D1F] to-[#1D1D1F] bg-center" style={{backgroundSize: "50%", backgroundRepeat: "no-repeat"}}>
-                            <div className="h-[20px] w-[20px] bg-neonGreen outline outline-2 -outline-offset-2 outline-lightViolet rounded-full"/>
+                            <div className="h-[20px] w-[20px] bg-main-quaternary outline-2 -outline-offset-2 outline-main-secondary rounded-full"/>
                         </div>
                     </div>
                 </div>
@@ -184,7 +181,7 @@ export default function EducationHomePage() {
                             <span className="heading text-white">{education.third.year}</span>
                         </Reveal>
                         <div className="w-[20px] flex flex-col justify-center items-start h-full bg-gradient-to-b from-[#1D1D1F] to-[#400963] bg-center" style={{backgroundSize: "50%", backgroundRepeat: "no-repeat"}}>
-                            <div className="h-[20px] w-[20px] bg-neonGreen outline outline-2 -outline-offset-2 outline-lightViolet rounded-full"/>
+                            <div className="h-[20px] w-[20px] bg-main-quaternary outline-2 -outline-offset-2 outline-main-secondary rounded-full"/>
                         </div>
                     </div>
                 </div>
@@ -192,7 +189,7 @@ export default function EducationHomePage() {
         </div>
         <div className="w-full md:h-[89px] relative flex justify-center items-end">
             <div className="md:absolute static md:bottom-[-1px] md:right-0 flex justify-center items-center md:h-[89px] h-[36px] w-[200px] md:w-[490px] heading text-white bg-black" style={{background: "url('/images/titleVectorBlack.png')", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}>
-            {contents.skills}
+                Skills
             </div>
         </div>
     </section>

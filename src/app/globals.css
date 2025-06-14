@@ -1,39 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --main-foreground: #ffffff;
+  --main-primary: #7E12C3;
+  --main-secondary: #8466C7;
+  --main-tertiary: #AF8BFF;
+  --main-quaternary: #37F713;
+  --main-background: #1D1D1F;
+}
 
-  ::-webkit-scrollbar {
-      width: 10px;
-      /* Width of the scrollbar */
-    }
-  
-    ::-webkit-scrollbar-track {
-      background: #000000;
-      /* Color of the track */
-    }
-  
-    ::-webkit-scrollbar-thumb {
-      background: #7E12C3;
-      /* Color of the scrollbar handle */
-    }
-  
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-      /* Color of the scrollbar handle on hover */
-    }
+@theme inline {
+  --color-main-foreground: var(--main-foreground);
+  --color-main-background: var(--main-background);
+  --color-main-primary: var(--main-primary);
+  --color-main-secondary: var(--main-secondary);
+  --color-main-tertiary: var(--main-tertiary);
+  --color-main-quaternary: var(--main-quaternary);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --main-foreground: #ffffff;
+    --main-primary: #7E12C3;
+    --main-secondary: #8466C7;
+    --main-tertiary: #AF8BFF;
+    --main-quaternary: #37F713;
+    --main-background: #1D1D1F;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7E12C3;
+  /* Color of the scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-quaternary);
+  /* Color of the scrollbar handle on hover */
 }
 
 body {
@@ -111,4 +125,78 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Optional: CSS variables */
+
+
+/* Optional: custom background */
+.bg-custom-gradient {
+  background-image: linear-gradient(to bottom, #000000 0%, #380857 52%, #4D0B78 73%, #6D0EAA 100%);
+}
+
+/* Optional: flicker animation */
+@keyframes flicker {
+
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  30% {
+    opacity: 0.85;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  70% {
+    opacity: 0.75;
+  }
+
+  90% {
+    opacity: 0.85;
+  }
+}
+
+.animate-flicker {
+  animation: flicker 1s infinite;
+}
+
+/* Infinite scroll animations */
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes infinite-scroll-reverse {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 25s linear infinite;
+}
+
+.animate-infinite-scroll-reverse {
+  animation: infinite-scroll-reverse 25s linear infinite;
 }

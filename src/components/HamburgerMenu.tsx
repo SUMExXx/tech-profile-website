@@ -1,9 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-
-import Image from 'next/image';
 import Link from 'next/link';
-import { navbarLinks, contents, socials } from '@/data/website';
 
 import Menu from '@mui/icons-material/Menu';
 import { Close } from '@mui/icons-material';
@@ -11,7 +8,7 @@ import { Close } from '@mui/icons-material';
 
 // import Menu from './Menu';
 
-const HamburgerMenuBlog = () => {
+const HamburgerMenu = () => {
 
     // const vh = window.innerHeight;
 
@@ -32,7 +29,7 @@ const HamburgerMenuBlog = () => {
   return (
     <div>
         {
-            menuOpen? <button title='close' onClick={close}><Close className='h-[24px] w-[24px] text-violet'/></button> : <button title='open' onClick={open}><Menu className='h-[24px] w-[24px] text-violet'/></button>
+            menuOpen? <button title='close' onClick={close}><Close className='h-[24px] w-[24px] text-main-primary'/></button> : <button title='open' onClick={open}><Menu className='h-[24px] w-[24px] text-main-primary'/></button>
         }
         {/* <div className='z-40 top-[60px]' style={{height: "calc(100vh - 60px);"}}>
             <div className={`absolute top-[60px] flex flex-col p-[160px] items-end justify-center background-menu-vector-1 transition-transform duration-300 transform ${menuOpen ? `translate-x-[${9200}px]` : 'translate-x-0'} left-[-10000px]`} style={{height: "calc(100vh - 60px);", width: "calc((100vh - 60px)*463/545)"}}>
@@ -45,7 +42,7 @@ const HamburgerMenuBlog = () => {
                 {
                     navbarLinks.map(item => (
                         <div key={crypto.randomUUID()} className='transition justify-center ease-in-out hover:animate-text hover:text-[#F00000]'>
-                            <Link rel="canonical" className='md:text-[16px] font-medium text-neonGreen' href={item.link}>{item.text}</Link>
+                            <Link rel="canonical" className='md:text-[16px] font-medium text-main-quaternary' href={item.link}>{item.text}</Link>
                         </div>
                     ))
                 }
@@ -54,13 +51,15 @@ const HamburgerMenuBlog = () => {
         <div className={`absolute flex md:hidden background-menu-vector-1 bg-slate-300 top-[60px] z-10 left-0 w-3/4 py-40 transition-transform duration-300 transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'}  p-4 pl-[40px]`} style={{height: 'calc(100vh - 60px)'}}>
             <div className='flex flex-col items-center justify-center md:gap-8 gap-2 w-full heading text-left'>
                 <ul className='items-start justify-center gap-[80px] flex flex-col w-full'>
-                    {
-                        navbarLinks.map(item => (
-                            <div key={crypto.randomUUID()} className='transition justify-center ease-in-out hover:animate-text hover:text-[#F00000]'>
-                                <Link onClick={close} rel="canonical" className='md:text-[16px] font-medium text-neonGreen' href={item.link}>{item.text}</Link>
-                            </div>
-                        ))
-                    }
+                    <div className='transition justify-center ease-in-out hover:animate-text hover:text-[#F00000]'>
+                        <Link onClick={close} rel="canonical" className='md:text-[16px] font-medium text-main-quaternary' href={'/'}>About</Link>
+                    </div>
+                    <div className='transition justify-center ease-in-out hover:animate-text hover:text-[#F00000]'>
+                        <Link onClick={close} rel="canonical" className='md:text-[16px] font-medium text-main-quaternary' href={'/projects'}>Projects</Link>
+                    </div>
+                    <div className='transition justify-center ease-in-out hover:animate-text hover:text-[#F00000]'>
+                        <Link onClick={close} rel="canonical" className='md:text-[16px] font-medium text-main-quaternary' href={'#contact'}>Contact</Link>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -70,7 +69,7 @@ const HamburgerMenuBlog = () => {
                     {
                         navbarLinks.map(item => (
                             <div key={crypto.randomUUID()} className='transition justify-center ease-in-out hover:animate-text hover:text-[#F00000]'>
-                                <Link rel="canonical" className='md:text-[16px] font-medium text-neonGreen' href={item.link}>{item.text}</Link>
+                                <Link rel="canonical" className='md:text-[16px] font-medium text-main-quaternary' href={item.link}>{item.text}</Link>
                             </div>
                         ))
                     }
@@ -86,4 +85,4 @@ const HamburgerMenuBlog = () => {
   )
 }
 
-export default HamburgerMenuBlog;
+export default HamburgerMenu;

@@ -1,40 +1,34 @@
-import MoreBlogs from "@/app/(blog-group)/blog/components/MoreBlogs";
-import { contents, skills } from "@/data/website";
-import Image from "next/image";
-import { blogs } from "../data/recentBlogs";
-import Link from "next/link";
-import { blogPages } from "../data/blogPages";
-import ProgressBar from "../components/ProgressBar";
+import MoreBlogs from "@/components/MoreBlogs";
+import ProgressBar from "@/components/ProgressBar";
+import { blogs } from "@/lib/blogData/blogs";
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
+const Blog = async (
+  { params }: { params: Promise<{ slug: string }>}
+) => {
 
-export default function Blog({params}: PageProps) {
+  const {slug} = await params;
 
-  const {slug} = params;
+  const blog = blogs.find((blog) => blog.url === slug)
 
-  const data = blogPages[slug]
+  const page = blog?.page
 
-  
-
-  if(!data){
+  if(!page){
     <div>
 
     </div>
   } else{
     return (
-      <div className="flex flex-col relative md:justify-center justify-end md:items-start items-center text-white p-[20px] md:gap-[20px] gap-[20px]" style={{minHeight: "calc(100vh - 80px)"}}>
+      <div className="flex flex-col relative md:justify-center justify-end md:items-start items-center text-white md:gap-[20px] gap-[20px]" style={{minHeight: "calc(100vh - 80px)"}}>
         <ProgressBar/>
-        <div className="flex flex-col-reverse lg:flex-row gap-[20px] justify-center items-start w-full">
+        <div className="flex flex-col-reverse lg:flex-row gap-[20px] justify-center items-start w-full max-w-[1600px] md:px-20 sm:px-5 px-2.5 sm:py-5 py-2.5">
           <MoreBlogs/>
-          <div className="lg:max-w-[800px] w-full flex justify-center items-start md:p-[40px] p-[20px] bg-grey rounded-2xl">
-            {data}
+          <div className="w-full flex justify-center items-start md:p-[40px] p-[20px] bg-main-background rounded-2xl">
+            {page}
           </div>
         </div>
       </div>
     );
   }
 }
+
+export default Blog

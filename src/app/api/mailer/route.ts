@@ -1,19 +1,17 @@
 import { NextResponse } from 'next/server';
-
 import nodemailer from 'nodemailer';
+import type SMTPTransport from 'nodemailer/lib/smtp-transport';
 
 const transporter = nodemailer.createTransport({
-    host: process.env.EMAIL_HOST, // e.g., 'smtp.gmail.com'
-    port: 465, // For SSL
-    secure: true, // true for 465, false for other ports
-    auth: {
-      user: process.env.EMAIL_USER, // Your email address
-      pass: process.env.EMAIL_PASS, // Your email password or app-specific password
-    },
-    tls: {
-      rejectUnauthorized: true, // Set to true in production
-    },
-});
+  service: process.env.EMAIL_SERVICE,
+  auth: {
+    type: process.env.EMAIL_AUTH_TYPE,
+    user: process.env.EMAIL_USER,
+    clientId: process.env.EMAIL_CLIENT_ID,
+    clientSecret: process.env.EMAIL_CLIENT_SECRET,
+    refreshToken: process.env.EMAIL_REFRESH_TOKEN,
+  },
+} as SMTPTransport.Options);
 
 export async function POST(request: Request) {
   const body = await request.json();
@@ -29,7 +27,9 @@ export async function POST(request: Request) {
   try {
     const info = await transporter.sendMail(mailOptions);
     return NextResponse.json({ success: true, info }, { status: 200 });
-  } catch (error: any) {
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+  } catch (error: unknown) {
+    console.log(error)
+    const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
+    return NextResponse.json({ success: false, error: errorMessage }, { status: 500 });
   }
 }

@@ -1,32 +1,13 @@
-import { website } from "@/data/website";
 import { MetadataRoute } from "next";
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
-    return[
-        {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL || website.w3url}`,
-            lastModified: new Date(),
-            priority: 1,
-        },
-        {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL || website.w3url}/projects`,
-            lastModified: new Date(),
-            priority: 0.80,
-        },
-        {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL || website.w3url}/experience`,
-            lastModified: new Date(),
-            priority: 0.80,
-        },
-        {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL || website.w3url}/blogs`,
-            lastModified: new Date(),
-            priority: 0.80,
-        },
-        {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL || website.w3url}/blogs/switching-to-bigger-ssd-without-losing-data`,
-            lastModified: new Date(),
-            priority: 0.70,
-        },
-    ]
-}
+const sitemap = (): MetadataRoute.Sitemap => {
+  return [
+    { url: `${process.env.NEXT_PUBLIC_BASE_URL}/`, lastModified: new Date(), changeFrequency: "yearly", priority: 1.0 },
+    { url: `${process.env.NEXT_PUBLIC_BASE_URL}/project`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    //blogs
+    { url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/switching-to-bigger-ssd-without-losing-data`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.7 },
+  ];
+};
+
+export default sitemap;

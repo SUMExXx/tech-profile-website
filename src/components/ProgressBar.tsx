@@ -1,9 +1,5 @@
 "use client";
-import { contents, featuredImages, webData, website } from '@/data/website';
 import React, { useState } from 'react';
-import Image from "next/image";
-import Link from 'next/link';
-import { blogs } from '@/app/(blog-group)/blog/data/recentBlogs';
 import { useEffect } from "react"
 
 const ProgressBar = () => {
@@ -34,7 +30,7 @@ const ProgressBar = () => {
     return (
         
         <div className="w-full h-[6px] fixed md:top-[80px] top-[60px] left-0 flex justify-start items-start grid-back z-50 bg-black" id="progress-bar">
-          <div id="progress" className={`bg-violet h-[6px] z-50`} style={{width: `${width}%`}}></div>
+          <div id="progress" className={`bg-main-primary h-[6px] z-50`} style={{width: `${width}%`}}></div>
         </div>
     );
 };

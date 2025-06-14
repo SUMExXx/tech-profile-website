@@ -1,11 +1,9 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import "../../globals.css";
-import Navbar from "@/app/(main-group)/components/Navbar";
-import Footer from "@/app/(main-group)/components/Footer";
-import NavbarBlog from "@/app/(blog-group)/blog/components/NavbarBlog";
+import "@/app/globals.css";
+import NavbarBlog from "@/components/NavbarBlog";
 import Script from "next/script";
-import FooterBlog from "./components/FooterBlog";
+import FooterBlog from "@/components/FooterBlog";
 
 const jetBrainMono = JetBrains_Mono({ subsets: ["latin"] });
 
@@ -15,11 +13,6 @@ export const metadata: Metadata = {
   other: {
     "google-adsense-account": "ca-pub-2246017499375159"
   }
-};
-
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
 };
 
 export default function BlogLayout({
