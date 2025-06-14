@@ -9,7 +9,7 @@ export default function Blog2() {
         <h1 className="text-3xl font-bold text-white mb-2">
           Exploring the Wonders of Nature
         </h1>
-        <p className="text-gray-400">By Jane Doe | October 15, 2024</p>
+        <p className="text-gray-400">By Suman Debnath | June 14, 2025</p>
       </div>
 
       {/* Featured Image */}

@@ -1,17 +1,13 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import type SMTPTransport from 'nodemailer/lib/smtp-transport';
 
 const transporter = nodemailer.createTransport({
   service: process.env.EMAIL_SERVICE,
   auth: {
-    type: process.env.EMAIL_AUTH_TYPE,
     user: process.env.EMAIL_USER,
-    clientId: process.env.EMAIL_CLIENT_ID,
-    clientSecret: process.env.EMAIL_CLIENT_SECRET,
-    refreshToken: process.env.EMAIL_REFRESH_TOKEN,
+    pass: process.env.EMAIL_APP_PASS
   },
-} as SMTPTransport.Options);
+});
 
 export async function POST(request: Request) {
   const body = await request.json();
