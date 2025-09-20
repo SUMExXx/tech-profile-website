@@ -1,6 +1,6 @@
 import { skills } from "@/lib/data/website";
 
-export default function SkillsScrollHomePage() {
+const SkillsScrollHomePage = () => {
   return (
     <section className="relative w-full justify-center items-center bg-black overflow-hidden gap-[10px] md:p-[20px] p-[10px] flex flex-col flex-nowrap">
         <div className="flex justify-start items-center w-full gap-[10px] animate-infinite-scroll">
@@ -38,3 +38,5 @@ export default function SkillsScrollHomePage() {
     </section>
   );
 }
+
+export default SkillsScrollHomePage;

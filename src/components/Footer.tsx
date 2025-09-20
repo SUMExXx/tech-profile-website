@@ -20,9 +20,9 @@ const Footer = () => {
       </div>
 
       <div className='md:gap-[20px] gap-[20px] w-full flex flex-col justify-start items-center bg-main-background' id='contact'>
-        <div className='w-full flex flex-wrap text-white md:justify-between justify-center gap-[40px] md:px-20 px-10 md:pt-[80px] pt-[40px] items-start max-w-[1600px]'>
+        <div className='w-full flex flex-wrap md:justify-between justify-center gap-[40px] md:px-20 px-10 md:pt-[80px] pt-[40px] items-start max-w-[1440px]'>
           <div className='flex flex-col h-full justify-between md:items-start items-center'>
-            <Link href={process.env.NEXT_PUBLIC_BASE_URL || '/'}><Image src={'/images/sd.png'} height={87} width={159} alt='SD Logo' className='md:w-[159px] md:h-[87px] w-[54px] h-[30px]'/></Link>
+            <Link href={process.env.NEXT_PUBLIC_BASE_URL || '/'}><Image src={'/icons/sd.svg'} height={87} width={159} alt='SD Logo' className='md:w-[159px] md:h-[87px] w-[54px] h-[30px]'/></Link>
             <div className='md:py-[40px] py-[20px] md:gap-[40px] gap-[20px] flex flex-col md:items-start items-center'>
               <Link rel="canonical" className='md:text-[20px] font-medium text-main-quaternary' href={'/'}>About</Link>
               <Link rel="canonical" className='md:text-[20px] font-medium text-main-quaternary' href={'/projects'}>Projects</Link>
@@ -31,21 +31,21 @@ const Footer = () => {
           <div className='flex flex-col h-full justify-between md:items-start items-center'>
             <h1 className='md:text-[28px] text-[20px] font-extrabold text-main-secondary'>Contact</h1>
             <div className='flex flex-col h-full md:gap-[40px] gap-[20px] md:py-[40px] py-[20px] justify-center md:items-start items-center'>
-              <Link rel="canonical" target='_blank' className='flex justify-center items-center md:gap-[20px] gap-[10px]' href={socials.github}>
+              <Link rel="canonical" target='_blank' className='flex justify-center items-center md:gap-[20px] gap-[10px] text-main-foreground' href={socials.github}>
                   <GitHubIcon className='md:h-[24px] md:w-[24px] h-[24px] w-[24px]' sx={{color: 'white'}}/>
-                  <span className='md:subtitle text-white'>{socials.github.substring(18)}</span>
+                  <span className='md:subtitle'>{socials.github.substring(18)}</span>
               </Link>
-              <Link rel="canonical" target='_blank' className='flex justify-center items-center md:gap-[20px] gap-[10px]' href={socials.linkedIn}>
+              <Link rel="canonical" target='_blank' className='flex justify-center items-center md:gap-[20px] gap-[10px] text-main-foreground' href={socials.linkedIn}>
                   <LinkedInIcon className='md:h-[24px] md:w-[24px] h-[24px] w-[24px]' sx={{color: 'white'}}/>
-                  <span className='md:subtitle text-white'>{socials.linkedIn.substring(27)}</span>
+                  <span className='md:subtitle'>{socials.linkedIn.substring(27)}</span>
               </Link>
-              <Link rel="canonical" className='flex justify-center items-center md:gap-[20px] gap-[10px]' href={socials.phone}>
+              <Link rel="canonical" className='flex justify-center items-center md:gap-[20px] gap-[10px] text-main-foreground' href={socials.phone}>
                   <CallIcon className='md:h-[24px] md:w-[24px] h-[24px] w-[24px]' sx={{color: 'white'}}/>
-                  <span className='md:subtitle text-white'>{socials.phone.substring(4)}</span>
+                  <span className='md:subtitle'>{socials.phone.substring(4)}</span>
               </Link>
-              <Link rel="canonical" className='flex justify-center items-center md:gap-[20px] gap-[10px]' href={socials.email}>
+              <Link rel="canonical" className='flex justify-center items-center md:gap-[20px] gap-[10px] text-main-foreground' href={socials.email}>
                   <MailIcon className='md:h-[24px] md:w-[24px] h-[24px] w-[24px]' sx={{color: 'white'}}/>
-                  <span className='md:subtitle text-white'>{socials.email.substring(7)}</span>
+                  <span className='md:subtitle'>{socials.email.substring(7)}</span>
               </Link>
             </div>
           </div>

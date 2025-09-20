@@ -2,15 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 import { website } from '@/lib/data/website';
 import Logo from '@/components/Logo';
-import HamburgerMenuBlog from './HamburgerMenuBlog';
-
-// import Menu from './Menu';
+import HamburgerMenuBlog from '@/components/HamburgerMenuBlog';
 
 const NavbarBlog = () => {
 
   return (
     <nav className='z-50 flex w-full fixed top-0 justify-center md:h-[80px] h-[60px] bg-main-background shadow-2xl' id='navbar_container'>
-        <div className='flex justify-between items-center max-w-[1600px] md:px-20 px-[10px] w-full'>
+        <div className='flex justify-between items-center max-w-[1440px] md:px-20 px-[10px] w-full'>
             <Link rel="canonical" href={process.env.NEXT_PUBLIC_BLOG_URL || '/'} className='flex items-center gap-2 md:gap-4'>
                 <div className='flex items-center md:gap-[10px]'>
                     {/* <Image src={'/images/sd.png'} width={54.55} height={30} alt={'GSPH logo'} className='md:w-[54.55px] md:h-[30px] w-[36.36px] h-[20px]'></Image> */}

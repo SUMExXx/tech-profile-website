@@ -4,6 +4,7 @@ type WebSite = {
     url: string;
     blogUrl: string;
     baseUrl: string;
+    TWITTER: string;
 }
 
 type WebData = {
@@ -50,8 +51,18 @@ type ProjectPreviews = {
 type Blog = {
     title: string;
     url: string;
+    description: string;
+    keywords: string[];
     author: string;
     page: React.ReactNode;
     cover: string;
     published: Date;
+}
+
+type TimelineItem = {
+    title: string;
+    subtitle: string;
+    text: string;
+    image: string;
+    year: string;
 }

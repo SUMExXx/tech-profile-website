@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export async function POST(request: Request) {
+export const POST = async (request: Request) => {
   const body = await request.json();
   const { email, message } = body;
   
