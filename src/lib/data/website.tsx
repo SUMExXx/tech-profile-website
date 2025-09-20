@@ -3,7 +3,8 @@ export const website: WebSite = {
     w3url: 'https://www.sumandebnath.site',
     url: 'https://www.sumandebnath.site',
     blogUrl: 'https://blog.sumandebnath.site',
-    baseUrl: 'https://www.sumandebnath.site'
+    baseUrl: 'https://www.sumandebnath.site',
+    TWITTER: '@SUMExXx666',
 }
 
 export const webData: WebData = {
@@ -13,14 +14,14 @@ export const webData: WebData = {
 }
 
 export const skills: string[]= [
-    "Next.JS", "React.JS", "Flutter", "Android", "Express.JS", "MongoDB", "Figma", "Strapi", "FastAPI", "AWS", "Firebase", "Docker", "Vagrant", "TypeScript", "Node.JS", "TailwindCSS", "C/C++", "Python", "Java", "JavaScript", "Dart", "HTML", "CSS", "XML", "Bootstrap", "Git", "GitHub", "PostgreSQL", "Linux", "Scripting"
+    "Next.JS", "React.JS", "Flutter", "Android", "Express.JS", "MongoDB", "WordPress", "Figma", "Strapi", "FastAPI", "AWS", "Firebase", "Docker", "Vagrant", "TypeScript", "Node.JS", "TailwindCSS", "C/C++", "Python", "Java", "JavaScript", "Dart", "HTML", "CSS", "XML", "Bootstrap", "Git", "GitHub", "PostgreSQL", "Linux", "Scripting"
 ]
 
 export const featuredImages: FeaturedItems[]= [
     {
         image: "/images/carousel1.png",
         link: '/',
-        text: "A hobby ecommerce website for ordering food using MERN stack, integrated with Razorpay payment Gateway."
+        text: "Firstox Studio, a 3D T-Shirt Design mockup generator SAAS platform with adjustable animations and texture and surrounding customizations along with Admin and Affiliate sections and integrated with Dodo Payments."
     },
     {
         image: "/images/carousel2.png",
@@ -39,26 +40,29 @@ export const featuredImages: FeaturedItems[]= [
     },
 ]
 
-export const education = {
-    first: {
-        title: 'B. Tech. CSE, SGSITS',
-        text: 'Currently pursuing Bachelor of Technology in Computer Science Engineering from Shri G. S. Institute of Technology and Science, Indore. I am also associated with Club GS Production House as Advisory Board Member, Computer Club as Graphic Designer and held Head of Web Development at E-Cell, SGSITS.',
-        image: '/images/sgsits.png',
+export const timeline : TimelineItem[] = [
+    {
+        title: 'Ascentt',
+        subtitle: 'Software Engineer',
+        text: 'As a Software Engineer at Ascentt, I work on full-stack development, building scalable web applications while designing intuitive UI/UX experiences to deliver seamless and user-friendly solutions.',
+        image: '/images/exp1.png',
         year: '2025'
     },
-    second: {
-        title: 'HSC Science, SKMS AGT',
-        text: 'Currently pursuing Bachelor of Technology in Computer Science Engineering from Shri G. S. Institute of Technology and Science, Indore. I am also associated with Club GS Production House as Advisory Board Member, Computer Club as Graphic Designer and held Head of Web Development at E-Cell, SGSITS.',
-        image: '/images/skms.png',
-        year: '2021'
+    {
+        title: 'Ascentt',
+        subtitle: 'Software Development Intern',
+        text: 'As a Software Development Intern at Ascentt, I contributed to building web interfaces and enhancing user experiences through effective UI/UX design, gaining hands-on experience in full-stack development.',
+        image: '/images/exp2.png',
+        year: '2025'
     },
-    third: {
-        title: 'SSC, SKMS AGT',
-        text: 'Currently pursuing Bachelor of Technology in Computer Science Engineering from Shri G. S. Institute of Technology and Science, Indore. I am also associated with Club GS Production House as Advisory Board Member, Computer Club as Graphic Designer and held Head of Web Development at E-Cell, SGSITS.',
-        image: '/images/skms.png',
-        year: '2019'
+    {
+        title: 'Shri G. S. Institute of Technology and Science, Indore',
+        subtitle: 'Computer Science Engineering',
+        text: 'Graduated with Bachelor of Technology in Computer Science Engineering from Shri G. S. Institute of Technology and Science, Indore. I am also associated with Club GS Production House as Advisory Board Member, Computer Club as Graphic Designer and held Head of Web Development at E-Cell, SGSITS.',
+        image: '/images/exp3.png',
+        year: '2025'
     }
-}
+]
 
 export const socials: Socials = {
     linkedIn: 'https://www.linkedin.com/in/suman-debnath6',

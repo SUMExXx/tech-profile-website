@@ -5,9 +5,6 @@ import Link from 'next/link';
 import Menu from '@mui/icons-material/Menu';
 import { Close } from '@mui/icons-material';
 
-
-// import Menu from './Menu';
-
 const HamburgerMenuBlog = () => {
 
     // const vh = window.innerHeight;

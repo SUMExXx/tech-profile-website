@@ -1,7 +1,36 @@
 import Image from "next/image";
+import Link from "next/link";
 import Script from 'next/script';
+import BlogCodeBlock from "@/components/BlogCodeBlock";
 
-export default function Blog1() {
+const code = [
+  {
+    language: 'jsx',
+    filename: 'MyComponent.jsx',
+    code: `function MyComponent(props) {
+  return (
+    <div>
+      <h1>Hello, {props.name}!</h1>
+      <p>This is an example React component.</p>
+    </div>
+  );
+}`,
+  },
+  {
+    language: 'tsx',
+    filename: 'MyComponent.tsx',
+    code: `function MyComponent(props: { name: string }) {
+  return (
+    <div>
+      <h1>Hello, {props.name}!</h1>
+      <p>This is an example React component.</p>
+    </div>
+  );
+}`,
+  },
+];
+
+const Blog1 = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-6 rounded-lg my-8 bg-transparent">
@@ -34,11 +63,11 @@ export default function Blog1() {
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2246017499375159" crossOrigin="anonymous"></script>
         <ins className="adsbygoogle"
-            style={{ display: 'block', textAlign: 'center' }}
-            data-ad-layout="in-article"
-            data-ad-format="fluid"
-            data-ad-client="ca-pub-2246017499375159"
-            data-ad-slot="9000029878"/>
+          style={{ display: 'block', textAlign: 'center' }}
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-2246017499375159"
+          data-ad-slot="9000029878" />
         <Script id="ad299" strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
@@ -100,16 +129,20 @@ export default function Blog1() {
           reflective experience, reminding us of the grandeur of nature.
         </p>
 
+        <BlogCodeBlock code={code} />
+
         {/* Call-to-Action Button */}
         <div className="text-center mt-8">
-          <a
+          <Link
             href="#"
             className="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-500 transition duration-300"
           >
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </div>
   );
 }
+
+export default Blog1;

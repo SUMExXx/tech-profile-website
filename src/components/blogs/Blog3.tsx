@@ -1,32 +1,30 @@
+import { blogs } from "@/lib/blogData/blogs";
 import Image from "next/image";
+import Banner from "@/components/Banner";
 
-const Blog2 = () => {
+const Blog3 = (
+  { data }: { data: number }
+) => {
 
   return (
-    <div className="max-w-3xl mx-auto p-6 rounded-lg my-8 bg-transparent">
+    <div className="mx-auto p-6 rounded-lg my-8 bg-transparent">
       {/* Blog Header */}
       <div className="text-center">
-        <h1 className="text-3xl font-bold text-white mb-2">
-          Exploring the Wonders of Nature
+        <h1 className="text-[30px] font-bold text-white mb-2">
+          {blogs[data].title}
         </h1>
-        <p className="text-gray-400">By Suman Debnath | June 14, 2025</p>
+        <p className="text-gray-400">{`By ${blogs[data].author} | ${blogs[data].published}`}</p>
       </div>
 
       {/* Featured Image */}
-      <Image
-        src="https://via.placeholder.com/800x400"
-        alt="Nature scenery"
-        className="w-full h-auto rounded-md mt-6"
-        width={800}
-        height={400}
-      />
+      <Banner src={blogs[data].cover} alt={blogs[data].title} />
 
       {/* Blog Content */}
       <div className="mt-6 text-gray-300 leading-relaxed">
         <p className="mb-4">
           Nature has an incredible ability to inspire and heal. From lush green
           forests to serene lakes and towering mountains, every corner of
-          nature has something awe-inspiring to offer. In today’s blog, we’ll
+          nature has something awe-inspiring to offer. In todays blog, we’ll
           explore some of the most captivating natural wonders that everyone
           should experience at least once in their lifetime.
         </p>
@@ -100,4 +98,4 @@ const Blog2 = () => {
   );
 }
 
-export default Blog2;
+export default Blog3;

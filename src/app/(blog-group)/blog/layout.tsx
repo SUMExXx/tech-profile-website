@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   }
 };
 
-export default function BlogLayout({
+const BlogLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang="en">
       <body className={`${jetBrainMono.className} antialiased`}>
@@ -38,3 +38,5 @@ export default function BlogLayout({
     </html>
   );
 }
+
+export default BlogLayout;

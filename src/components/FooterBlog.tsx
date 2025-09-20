@@ -18,9 +18,9 @@ const FooterBlog = () => {
           <Image className='absolute md:hidden flex left-2/3 -bottom-1 md:w-[481.5px] md:h-[66px] w-[273px] h-[37px] transform scale-x-[-1]' src={'/images/footerElement.png'} alt='footer element' width={481.5} height={66}/>
         </div>
         <div className='md:gap-[20px] gap-[20px] w-full flex flex-col justify-start items-center bg-main-background' id='contact'>
-          <div className='w-full flex flex-wrap text-white md:justify-between justify-center gap-[40px] md:px-[80px] px-[40px] md:pt-[80px] pt-[40px] items-start max-w-[1600px]'>
+          <div className='w-full flex flex-wrap text-white md:justify-between justify-center gap-[40px] md:px-[80px] px-[40px] md:pt-[80px] pt-[40px] items-start max-w-[1440px]'>
             <div className='flex flex-col h-full justify-between md:items-start items-center'>
-              <Link href={process.env.NEXT_PUBLIC_BASE_URL || '/'}><Image src={'/images/sd.png'} height={87} width={159} alt='SD Logo' className='md:w-[159px] md:h-[87px] w-[54px] h-[30px]'/></Link>
+              <Link href={process.env.NEXT_PUBLIC_BASE_URL || '/'}><Image src={'/icons/sd.svg'} height={87} width={159} alt='SD Logo' className='md:w-[159px] md:h-[87px] w-[54px] h-[30px]'/></Link>
               <div className='md:py-[40px] py-[20px] md:gap-[40px] gap-[20px] flex flex-col md:items-start items-center'>
                 <Link rel="canonical" className='md:text-[20px] font-medium text-main-quaternary' href={'/'}>About</Link>
                 <Link rel="canonical" className='md:text-[20px] font-medium text-main-quaternary' href={'/projects'}>Projects</Link>

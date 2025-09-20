@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(request: NextRequest) {
+const middleware = (request: NextRequest) => {
   const host = request.headers.get('host');
   const subdomain = host?.split('.')[0] || '';
 
@@ -23,3 +23,5 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: ['/:path*'], // Apply middleware to all routes
 };
+
+export default middleware;
