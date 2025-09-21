@@ -1,11 +1,12 @@
+import { authorSumanDebnath } from "@/lib/data/website";
 import Image from "next/image";
 import { FC } from "react";
 
-export const Blog2Metadata: BlogMetadata = {
-  title: 'ExpressJS Backend setup with TypeScript and ES2020 2025 Guide',
-  description: 'ExpressJS Backend setup with TypeScript and ES2020 2025 Guide',
-  keywords: ['ExpressJS', 'TypeScript', 'ES2020', 'Backend Setup'],
-  authors: [{ name: "Jane Doe", url: "https://janedoe.com" }],
+export const BlogTemplateMetadata: BlogMetadata = {
+  title: 'Deploying ExpressJS Backend to AWS Elastic Beanstalk',
+  description: 'Deploying ExpressJS Backend to AWS Elastic Beanstalk',
+  keywords: ['ExpressJS', 'AWS', 'Elastic Beanstalk', 'Deployment'],
+  authors: [authorSumanDebnath],
   publisher: { name: "Nature Blog", url: "https://natureblog.com" },
   publishedTime: new Date("2025-06-14") || new Date(),
   modifiedTime: new Date("2024-10-15") || new Date(),
@@ -29,7 +30,7 @@ export const Blog2Metadata: BlogMetadata = {
   }
 };
 
-const Blog2: FC = () => {
+const BlogTemplate: FC = () => {
 
   return (
     <div className="mt-6 text-gray-300 leading-relaxed">
@@ -68,8 +69,8 @@ const Blog2: FC = () => {
       {/* Quote */}
       <blockquote className="border-l-4 border-blue-400 pl-4 italic text-gray-400 mb-4">
         {`
-              "In every walk with nature one receives far more than he seeks." - John
-              Muir`
+          "In every walk with nature one receives far more than he seeks." - John
+          Muir`
         }
       </blockquote>
 
@@ -109,4 +110,4 @@ const Blog2: FC = () => {
   );
 }
 
-export default Blog2;
+export default BlogTemplate;

@@ -73,6 +73,11 @@ export const socials: Socials = {
     email: 'mailto:sumexxx666@gmail.com'
 }
 
+export const authorSumanDebnath: Author = {
+    name: "Suman Debnath",
+    url: "https://www.linkedin.com/in/suman-debnath6",
+}
+
 export const webTechIcons: WebTechIcon[]= [
     {
         url: "/icons/nextjs-monochrome.png",

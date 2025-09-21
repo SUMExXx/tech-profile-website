@@ -46,17 +46,6 @@ type ProjectPreviews = {
     flutter: ProjectPreview[];
     uiux: ProjectPreview[];
     graphics: ProjectPreview[];
-} 
-
-type Blog = {
-    title: string;
-    url: string;
-    description: string;
-    keywords: string[];
-    author: string;
-    page: React.ReactNode;
-    cover: string;
-    published: Date;
 }
 
 type TimelineItem = {
@@ -65,4 +54,50 @@ type TimelineItem = {
     text: string;
     image: string;
     year: string;
+}
+
+type BlogCodeBlock = {
+    language: string;
+    filename: string;
+    code: string;
+}
+
+type BlogMetadata = {
+    title: string;
+    description: string;
+    keywords: string[];
+    authors: { name: string; url?: string }[];
+    publisher?: { name: string; url?: string };
+    publishedTime: Date;
+    modifiedTime?: Date;
+    openGraph?: {
+        title?: string;
+        description?: string;
+        url?: string;
+        siteName?: string;
+        images?: { url: string; width?: number; height?: number; alt?: string }[];
+        locale?: string;
+        type?: string;
+    };
+    twitter?: {
+        card?: string;
+        title?: string;
+        description?: string;
+        images?: string[];
+        creator?: string;
+    };
+    other?: { [key: string]: string | string[] | undefined };
+}
+
+type Blog = {
+    url: string;
+    metadata: BlogMetadata;
+    page: React.ReactNode;
+    cover: string;
+    mainImage: string;
+}
+
+type Author = {
+    name: string;
+    url?: string;
 }

@@ -54,7 +54,7 @@ const Home = () => {
       <FeaturedHomePage/>
       <div className="w-full flex justify-center">
         <div className="w-full max-w-[1440px] relative flex justify-center items-end">
-          <div className="md:absolute static md:bottom-[-1px] md:left-20 translate-y-[1px] md:left-0 flex justify-center items-center md:h-[89px] h-[36px] w-[200px] md:w-[490px] heading text-main-foreground bg-[url('/images/titleVector.png')] bg-contain bg-no-repeat">
+          <div className="md:absolute static md:bottom-[-1px] md:left-20 translate-y-[1px] left-0 flex justify-center items-center md:h-[89px] h-[36px] w-[200px] md:w-[490px] heading text-main-foreground bg-[url('/images/titleVector.png')] bg-contain bg-no-repeat">
             Experience
           </div>
         </div>
