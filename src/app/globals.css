@@ -105,18 +105,26 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: black;
   /* Color of the track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7E12C3;
+  background: var(--main-primary);
+  cursor: ns-resize;
   /* Color of the scrollbar handle */
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--main-quaternary);
   /* Color of the scrollbar handle on hover */
+}
+
+::selection {
+  background-color: var(--main-quaternary);
+  /* bright green */
+  color: black;
+  /* optional: text color while selected */
 }
 
 body {

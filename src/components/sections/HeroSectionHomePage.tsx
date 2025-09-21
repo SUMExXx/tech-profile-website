@@ -34,22 +34,22 @@ const HeroSectionHomePage = () => {
                 </div>
                 <div className="flex flex-wrap justify-between items-start md:hidden w-[320px] gap-x-[50px] gap-y-[20px]">
                     <button type="button" className="subtitle text-main-foreground flex justify-center items-center text-center right-[360px] top-[-16px] w-[127px] h-[25px] bg-[url('/images/leftSkillVector.png')] bg-contain bg-no-repeat cursor-pointer">
-                        FullStack Developer
+                        FullStack Development
                     </button>
                     <button type="button" className="subtitle text-main-foreground flex justify-center items-center text-center left-[364px] top-[-16px] w-[127px] h-[25px] bg-[url('/images/rightSkillVector.png')] bg-contain bg-no-repeat cursor-pointer">
-                        Flutter Developer
+                        Flutter Development
                     </button>
                     <button type="button" className="subtitle text-main-foreground flex justify-center items-center text-center right-[360px] top-[90px] w-[127px] h-[25px] bg-[url('/images/leftSkillVector.png')] bg-contain bg-no-repeat cursor-pointer">
-                        UI/UX Designer
+                        UI/UX Designing
                     </button>
                     <button type="button" className="subtitle text-main-foreground flex justify-center items-center text-center left-[364px] top-[90px] w-[127px] h-[25px] bg-[url('/images/rightSkillVector.png')] bg-contain bg-no-repeat cursor-pointer">
-                        Graphic Designer
+                        Graphic Designing
                     </button>
                     <button type="button" className="subtitle text-main-foreground flex justify-center items-center text-center right-[360px] top-[196px] w-[127px] h-[25px] bg-[url('/images/leftSkillVector.png')] bg-contain bg-no-repeat cursor-pointer">
-                        Media Editor
+                        Cloud Engineering
                     </button>
                     <button type="button" className="subtitle text-main-foreground flex justify-center items-center text-center left-[364px] top-[196px] w-[127px] h-[25px] bg-[url('/images/rightSkillVector.png')] bg-contain bg-no-repeat cursor-pointer">
-                        Programmer
+                        System Designing
                     </button>
                 </div>
                 <span className="md:w-[1066px] text md:text-left text-center text-main-tertiary">Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset.</span>
