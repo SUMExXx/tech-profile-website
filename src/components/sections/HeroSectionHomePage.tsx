@@ -52,7 +52,7 @@ const HeroSectionHomePage = () => {
                         System Designing
                     </button>
                 </div>
-                <span className="md:w-[1066px] text md:text-left text-center text-main-tertiary">Hi! I am Suman Debnath, Undergraduate student at  Shri G. S. Institute of Technology, Indore in the department of Computer Science Engineering. I am a passionate Software Developer with a variety of creative skillset.</span>
+                <span className="md:w-[1066px] text md:text-left text-center text-main-tertiary">I&apos;m a Full Stack Developer and currently a Software Engineer at Ascentt. I studied Computer Science Engineering at SGSITS, Indore. I love building scalable, creative, and impactful software that turns ideas into reality.</span>
                 <Reveal className="cursor-pointer">
                     <a href="/files/SumanDebnathResumeV3.pdf" download className="mt-8 transition-all duration-300 ease-in-out hover:filter hover:brightness-125 cursor-pointer">
                         <button type="button" className="subtitle animate-bounce text-main-foreground flex justify-center items-center text-center md:w-[273.41px] md:h-[52.41px] w-[120px] h-[25px] bg-[url('/images/downloadVector.png')] bg-contain bg-no-repeat cursor-pointer">
