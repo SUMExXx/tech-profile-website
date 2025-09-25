@@ -13,13 +13,15 @@ export const blogs: Blog[] = [
   // {
   //   url: 'expressjs-backend-setup-with-typescript-in-es2020',
   //   cover: '/images/blogs/blog2/preview.png',
+  //   mainImage: '/images/blogs/blog2/main.png',
   //   metadata: Blog2Metadata,
-  //   page: Blog2,
+  //   page: <Blog2 />,
   // },
   // {
   //   url: 'switching-to-bigger-ssd-without-losing-data',
-  //   cover: '/images/blogs/blog1/preview.png',
+  //   cover: '/images/blogs/blog3/preview.png',
+  //   mainImage: '/images/blogs/blog3/main.png',
   //   metadata: Blog3Metadata,
-  //   page: Blog3,
+  //   page: <Blog3 />,
   // }
 ]

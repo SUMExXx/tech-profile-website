@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
 import "@/app/globals.css";
 import NavbarBlog from "@/components/NavbarBlog";
 import Script from "next/script";
 import FooterBlog from "@/components/FooterBlog";
-
-const jetBrainMono = JetBrains_Mono({ subsets: ["latin"] });
+import { jetBrainsMono } from "@/lib/data/fonts";
 
 export const metadata: Metadata = {
   title: "Suman Debnath | Blog",
@@ -22,7 +20,7 @@ const BlogLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`${jetBrainMono.className} antialiased`}>
+      <body className={`${jetBrainsMono.className} antialiased`}>
         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2246017499375159" crossOrigin="anonymous"></Script>
         {/* <StateProvider>
           <AuthContextProvider> */}

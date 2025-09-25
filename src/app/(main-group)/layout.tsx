@@ -1,9 +1,7 @@
-import { JetBrains_Mono } from "next/font/google";
 import "@/app/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const jetBrainMono = JetBrains_Mono({ subsets: ["latin"] });
+import { jetBrainsMono } from "@/lib/data/fonts";
 
 const RootLayout = ({
   children,
@@ -12,7 +10,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`${jetBrainMono.className} antialiased`}>
+      <body className={`${jetBrainsMono.className} antialiased`}>
         {/* <StateProvider>
           <AuthContextProvider> */}
             <Navbar/>

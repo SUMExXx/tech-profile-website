@@ -34,7 +34,7 @@ const HeroSectionHomePage = () => {
                 </div>
                 <div className="flex flex-wrap justify-between items-start md:hidden w-[320px] gap-x-[50px] gap-y-[20px]">
                     <button type="button" className="subtitle text-main-foreground flex justify-center items-center text-center right-[360px] top-[-16px] w-[127px] h-[25px] bg-[url('/images/leftSkillVector.png')] bg-contain bg-no-repeat cursor-pointer">
-                        FullStack Development
+                        FullStack Dev
                     </button>
                     <button type="button" className="subtitle text-main-foreground flex justify-center items-center text-center left-[364px] top-[-16px] w-[127px] h-[25px] bg-[url('/images/rightSkillVector.png')] bg-contain bg-no-repeat cursor-pointer">
                         Flutter Development

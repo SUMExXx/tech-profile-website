@@ -1,10 +1,10 @@
-import React from 'react'
+import { ReactNode } from 'react'
 
 const BlogParagraph = (
-    { children }: { children: React.ReactNode | string }
+    { children }: { children: ReactNode }
 ) => {
     return (
-        <p className='mb-4'>
+        <p className='my-5'>
             {children}
         </p>
     )
