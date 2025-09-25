@@ -21,7 +21,7 @@ const BlogCodeBlock = ({
 }: {
     code: { language: string; filename: string; code: string }[];
 }) => (
-    <CodeBlock data={code} defaultValue={code[0].language} className='dark'>
+    <CodeBlock data={code} defaultValue={code[0].language} className='dark my-5 xl:w-full md:w-[calc(100vw-200px)] w-[calc(100vw-40px)] max-w-[760px] codeblock-scrollbar'>
         <CodeBlockHeader>
             <CodeBlockFiles>
                 {(item) => (

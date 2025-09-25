@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import MoreBlogs from "@/components/MoreBlogs";
 import ProgressBar from "@/components/ProgressBar";
 import { blogs } from "@/lib/blogData/blogs";
+import { openSans } from "@/lib/data/fonts";
 import { socials, website } from "@/lib/data/website";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -104,13 +105,13 @@ const Blog = async (
       <div className="w-full flex relative justify-center items-start md:gap-[20px] gap-[20px] min-h-[calc(100vh-80px)]">
         <div className="flex justify-between items-center max-w-[1440px] md:px-20 px-[10px] w-full">
           <ProgressBar />
-          <div className="flex flex-col-reverse lg:flex-row gap-[20px] justify-center items-start w-full sm:px-5 px-2.5 sm:py-5 py-2.5">
+          <div className="flex flex-col-reverse lg:flex-row gap-[20px] justify-center items-start w-full">
             <MoreBlogs currentBlog={blog}/>
-            <div className="w-full flex justify-center items-start md:p-[40px] p-[20px] bg-main-background rounded-2xl">
-              <div className="p-6 rounded-lg bg-transparent">
+            <div className={`w-full flex justify-center items-start md:p-10 p-2.5 bg-main-background rounded-2xl max-w-[820px] ${openSans.className}`}>
+              <div className="md:p-6 py-6 px-4 rounded-lg bg-transparent">
                 {/* Blog Header */}
                 <div className="text-center">
-                  <h1 className="text-[30px] font-bold text-white mb-2">
+                  <h1 className="md:text-[30px] text-[24px] font-bold text-white mb-2">
                     {blog.metadata.title}
                   </h1>
                   <p className="text-gray-400">By <Link href={blog.metadata.authors[0].url || '/'}>{blog.metadata.authors[0].name}</Link> | {blog.metadata.publishedTime?.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'}).replace(/ /g, ' ')}</p>

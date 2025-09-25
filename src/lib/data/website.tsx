@@ -1,9 +1,9 @@
 export const website: WebSite = {
     name: "Suman Debnath",
-    w3url: 'https://www.sumandebnath.site',
-    url: 'https://www.sumandebnath.site',
-    blogUrl: 'https://blog.sumandebnath.site',
-    baseUrl: 'https://www.sumandebnath.site',
+    w3url: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.sumandebnath.site',
+    url: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.sumandebnath.site',
+    blogUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/blog` || 'https://www.sumandebnath.site/blog',
+    baseUrl: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.sumandebnath.site',
     TWITTER: '@SUMExXx666',
 }
 
@@ -69,7 +69,7 @@ export const socials: Socials = {
     instagram: 'https://www.instagram.com/sumex.in',
     github: 'https://github.com/SUMExXx',
     blogs: '/blogs',
-    phone: 'tel:+918974863731',
+    phone: 'tel:+919303357985',
     email: 'mailto:sumexxx666@gmail.com'
 }
 

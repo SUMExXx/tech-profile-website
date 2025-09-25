@@ -127,6 +127,27 @@
   /* optional: text color while selected */
 }
 
+.codeblock-scrollbar pre::-webkit-scrollbar,
+.codeblock-scrollbar code::-webkit-scrollbar,
+.codeblock-scrollbar div::-webkit-scrollbar {
+  width: auto !important;
+  height: 10px !important;
+}
+
+.codeblock-scrollbar pre::-webkit-scrollbar-thumb,
+.codeblock-scrollbar code::-webkit-scrollbar-thumb,
+.codeblock-scrollbar div::-webkit-scrollbar-thumb {
+  background-color: gray !important;
+  border-radius: initial !important;
+  cursor: ew-resize;
+}
+
+.codeblock-scrollbar pre::-webkit-scrollbar-track,
+.codeblock-scrollbar code::-webkit-scrollbar-track,
+.codeblock-scrollbar div::-webkit-scrollbar-track {
+  background-color: initial !important;
+}
+
 body {
   /* color: rgb(var(--foreground-rgb)); */
   /* background: linear-gradient(
