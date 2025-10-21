@@ -1,9 +1,9 @@
 export const website: WebSite = {
     name: "Suman Debnath",
-    w3url: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.sumandebnath.site',
-    url: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.sumandebnath.site',
-    blogUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/blog` || 'https://www.sumandebnath.site/blog',
-    baseUrl: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.sumandebnath.site',
+    w3url: process.env.NEXT_PUBLIC_BASE_URL || '/',
+    url: process.env.NEXT_PUBLIC_BASE_URL || '/',
+    blogUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/blog` || '/',
+    baseUrl: process.env.NEXT_PUBLIC_BASE_URL || '/',
     TWITTER: '@SUMExXx666',
 }
 
