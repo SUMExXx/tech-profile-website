@@ -7,6 +7,7 @@ import BlogCodeInline from "@/components/BlogCodeInline";
 import BlogUl from "@/components//BlogUl";
 import BlogLi from "@/components//BlogLi";
 import BlogCodeBlock from "../BlogCodeBlock";
+import { BlogMetadata } from "@/types";
 
 export const Blog1Metadata: BlogMetadata = {
   title: 'Deploy any backend server to AWS ECS with auto-scaling',

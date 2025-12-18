@@ -1,4 +1,5 @@
 import Blog1, { Blog1Metadata } from "@/components/blogs/Blog1";
+import { Blog } from "@/types";
 // import Blog2, { Blog2Metadata } from "@/components/blogs/Blog2";
 // import Blog3, { Blog3Metadata } from "@/components/blogs/Blog3";
 

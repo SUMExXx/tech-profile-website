@@ -1,4 +1,5 @@
 import { authorSumanDebnath } from "@/lib/data/website";
+import { BlogMetadata } from "@/types";
 import Image from "next/image";
 import { FC } from "react";
 

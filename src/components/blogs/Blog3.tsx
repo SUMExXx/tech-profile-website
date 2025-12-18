@@ -3,8 +3,9 @@ import Link from "next/link";
 import Script from 'next/script';
 import BlogCodeBlock from "@/components/BlogCodeBlock";
 import { FC } from "react";
+import { BlogCodeBlockData, BlogMetadata } from "@/types";
 
-const code: BlogCodeBlock[] = [
+const code: BlogCodeBlockData[] = [
   {
     language: 'jsx',
     filename: 'MyComponent.jsx',

@@ -1,3 +1,5 @@
+import { Author, FeaturedItems, ProjectPreviews, Socials, TimelineItem, WebData, WebSite, WebTechIcon } from "@/types"
+
 export const website: WebSite = {
     name: "Suman Debnath",
     w3url: process.env.NEXT_PUBLIC_BASE_URL || '/',
