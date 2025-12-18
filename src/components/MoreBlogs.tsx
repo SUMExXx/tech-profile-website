@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { blogs } from '@/lib/blogData/blogs';
+import { Blog } from '@/types';
 
 const MoreBlogs = (
     { currentBlog }: { currentBlog?: Blog }
